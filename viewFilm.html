@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xem Phim:Kẻ Thống Trị</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/library.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/film.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="header__logo">
+            <img src="https://galaphim.net/images/logo/logo.webp" alt="">
+        </a>
+        <input type="checkbox" id="open-navbar" hidden>
+        <label for="open-navbar" class="overlay bg-black"></label>
+        <ul class="header__nav">
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Phim mới</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Phim lẻ</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Phim bộ</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Phim chiếu rạp</a>
+            </li>
+            <li class="header__nav-item">
+                <label for="open-category" class="header__nav-link">Thể loại</label>
+                <input type="checkbox" id="open-category" hidden>
+                <label for="open-category" class="overlay"></label>
+                <ul class="subnav__list">
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Hành động</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Chiến Tranh</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Kịch Tính</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Anime</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Lãng Mạn</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Đam Mỹ</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Kiếm Hiệp</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tiên Hiệp</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Võ Thuật</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">TV Show</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tài Liệu</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Cổ Trang</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Thần Thoại</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tình Cảm</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Ngôn Tình</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tâm Lý</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Hoạt Hình</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Thể Thao</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Khoa Học</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tội Phạm Học</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Âm Nhạc</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__nav-item">
+                <label for="open-nation" class="header__nav-link">Quốc gia</label>
+                <input type="checkbox" id="open-nation" hidden>
+                <label for="open-nation" class="overlay"></label>
+                <ul class="subnav__list">
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Trung Quốc</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Ấn Độ</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Nhật Bản</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Mỹ</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Thái Lan</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Hồng Kông</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Pháp</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Anh</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Đức</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tây Ban Nha</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Việt Nam</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Đài Loan</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Âu Mỹ</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Indonesia</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Na uy</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Turkey</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Italy</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Poland</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Sắp chiếu</a>
+            </li>
+        </ul>
+        <div class="header__control">
+            <label for="open-search" class="control-search">
+                    <i class="fas fa-search"></i>
+                    <input type="checkbox" id="open-search" hidden>
+                    <label for="open-search" class="overlay"></label>
+            <div class="header__search">
+                <div class="header__search-wrap">
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm theo tên, diễn viên, đạo diễn, thể loại,...">
+                    <a href="listFilm.html" class="btn btn-pink size-s">Tìm kiếm</a>
+                </div>
+            </div>
+            </label>
+            <label for="show__notify-body" class="control-notify have">
+                    <i class="fas fa-bell"></i>
+                    <span class="notify__amount">3</span>
+            </label>
+            <label class="control-login">
+                <a href="login.html" class="btn btn-pink size-l">Đăng nhập</a>
+                <a href="login.html" class="login-icon"><i class="fas fa-sign-in-alt"></i></a>
+            </label>
+        </div>
+        <label for="open-navbar" class="navbar-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+    <div class="main">
+        <div class="move-info">
+            <div class="grid wide">
+                <div class="row gt-s">
+                    <div class="col s-12">
+                        <div class="video-wrap">
+                            <video class="video-film" controls autoplay>
+                            <source src="assets/video/GODZILLA vs. KONG - Trailer Vietsub - Dự kiến khởi chiếu- 26.03.2021.mp4" type="video/mp4">
+                            <source src="assets/video/GODZILLA vs. KONG - Trailer Vietsub - Dự kiến khởi chiếu- 26.03.2021.mp4" type="video/ogg">
+                            Your browser does not support HTML video.
+                          </video>
+                        </div>
+                        <div class="group-btn_video">
+                            <ul>
+                                <li class="video-btn active">
+                                    <i class="fas fa-exclamation-triangle"></i> Báo lỗi
+                                </li>
+                                <li class="video-btn hide-s">
+                                    <i class="fas fa-power-off"></i> Tắt đèn </li>
+                                <li class="video-btn">
+                                    <i class="fas fa-calendar-day"></i> Tắt QC </li>
+                                <li class="video-btn hide-s">
+                                    <i class="fas fa-code"></i> Embed
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="video-btn">
+                                    <i class="fas fa-eye"></i> Views </li>
+                                <li class="video-btn">
+                                    <i class="fas fa-heart"></i> Yêu thích </li>
+
+                            </ul>
+                        </div>
+                        <div class="video-sever">
+                            <i class="fas fa-server"></i> Sever:
+                            <ul>
+                                <li class="video-sever-btn active">HLS</li>
+                                <li class="video-sever-btn">P2P</li>
+                                <li class="video-sever-btn">HDR</li>
+                            </ul>
+                        </div>
+                        <div class="video-sever__notify">
+                            <span>Chọn sever khác nếu không xem được phim</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-film-name">
+                                <i class="fas fa-play-circle"></i><a href="">Em là thành lũy của anh Tập 1 [Vietsub]</a>
+                                <div class="video-name-origin">You Are My City and Fortress (2021) </div>
+                            </div>
+                            <div class="review-video">
+                                <div class="group__star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span>(2.8 <i class="fas fa-star"></i> / 13 lượt)</span>
+                            </div>
+                        </div>
+                        <div class="fb-like fb_iframe_widget" data-href="https://galaphim.net/movie/4585" data-width="" data-lazy="true" data-colorscheme="dark" data-layout="button" data-action="like" data-size="small" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=389511608759329&amp;color_scheme=dark&amp;container_width=574&amp;href=https%3A%2F%2Fgalaphim.net%2Fmovie%2F4585&amp;layout=button&amp;lazy=true&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;size=small&amp;width="><span style="vertical-align: bottom; width: 120px; height: 28px;"><iframe name="f1b55f20fd25ecc" width="1000px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" loading="lazy" src="https://www.facebook.com/v9.0/plugins/like.php?action=like&amp;app_id=389511608759329&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1a9e4230e5ac94%26domain%3Dgalaphim.net%26origin%3Dhttps%253A%252F%252Fgalaphim.net%252Ffa52e5922ddc0c%26relation%3Dparent.parent&amp;color_scheme=dark&amp;container_width=574&amp;href=https%3A%2F%2Fgalaphim.net%2Fmovie%2F4585&amp;layout=button&amp;lazy=true&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;size=small&amp;width=" style="border: none; width: 120px; height: 28px; visibility: visible;" class=""></iframe></span></div>
+                    </div>
+                    <div class="col s-12">
+                        <h3 class="film__name">Danh sách tập</h3>
+                        <div class="choose-list show" id="episode">
+                            <div class="choose__title">
+                                <i class="fas fa-list"></i> VietSub
+                            </div>
+                            <div class="choose__body">
+                                <div class="choose__body-title">Tập: 1 - 7</div>
+                                <ul class="choose__body-list">
+                                    <li><a href="film.html">Tập 1</a></li>
+                                    <li><a href="film.html">Tập 2</a></li>
+                                    <li><a href="film.html">Tập 3</a></li>
+                                    <li><a href="film.html">Tập 4</a></li>
+                                    <li><a href="film.html">Tập 5</a></li>
+                                    <li><a href="film.html">Tập 6</a></li>
+                                    <li><a href="film.html">Tập 7</a></li>
+                                    <li><a href="film.html">Tập 1</a></li>
+                                    <li><a href="film.html">Tập 2</a></li>
+                                    <li><a href="film.html">Tập 3</a></li>
+                                    <li><a href="film.html">Tập 4</a></li>
+                                    <li><a href="film.html">Tập 5</a></li>
+                                    <li><a href="film.html">Tập 6</a></li>
+                                    <li><a href="film.html">Tập 7</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="film-detail bg-1">
+            <div class="grid wide">
+                <div class="row gt-l">
+                    <div class="col s-12 m-8 l-9">
+                        <div class="col s-12">
+                            <ul class="breadcrumb__list">
+                                <li class="breadcrumb__item">
+                                    <a href="index.html" class="breadcrumb__link">Trang chủ</a>
+                                </li>
+                                <li class="breadcrumb__item">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </li>
+                                <li class="breadcrumb__item">
+                                    <a href="listFilm.html" class="breadcrumb__link">Phim hàn quốc</a>
+                                </li>
+                                <li class="breadcrumb__item">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </li>
+                                <li class="breadcrumb__item">
+                                    <a href="film.html" class="breadcrumb__link">Em là thành lũy của anh</a>
+                                </li>
+                                <li class="breadcrumb__item">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </li>
+                                <li class="breadcrumb__item">
+                                    <a href="#" class="breadcrumb__link">Tập 1</a>
+                                </li>
+                            </ul>
+                            <div class="film__heading">Xem Phim Em Là Thành Trì Doanh Lũy Của Anh Tập 1</div>
+                            <div class="film__title">Phim Em Là Thành Trì Doanh Lũy Của Anh - You Are My City and Fortress (2021) [VietSub]</div>
+                            <p class="film__text">Em Là Thành Trì Doanh Lũy Của Anh có tựa gốc là You Are My City and Fortress được phát hành vào năm 2021 của đạo diễn Trương Đồng, Em Là Thành Trì Doanh Lũy Của Anh thuộc thể loại Hành Động Tình Cảm với sự tham gia của các
+                                diễn viên Mã Tư Thuần, Bạch Kính Đình <a href="listFilm.html" class="film__text-link">Xem thêm <i class="fas fa-arrow-right"></i></a> , <a href="#" class="film__text-link">Dowload<i class="fas fa-cloud-download-alt"></i></a></p>
+                            <div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop" data-href="https://cmt.galaphim.net/em-la-thanh-tri-doanh-luy-cua-anh" data-width="100%" data-mobile="true" data-colorscheme="dark" data-numposts="5" data-order-by="reverse_time"
+                                fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=389511608759329&amp;color_scheme=dark&amp;container_width=960&amp;height=100&amp;href=https%3A%2F%2Fcmt.galaphim.net%2Fem-la-thanh-tri-doanh-luy-cua-anh&amp;locale=vi_VN&amp;mobile=true&amp;numposts=5&amp;order_by=reverse_time&amp;sdk=joey&amp;version=v9.0&amp;width="
+                                style="width: 100%;"><span style="vertical-align: bottom; width: 100%; height: 278px;"><iframe name="f9a3dd19799a4" width="1000px" height="100px" data-testid="fb:comments Facebook Social Plugin" title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v9.0/plugins/comments.php?app_id=389511608759329&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1e4ae0bf02a0c4%26domain%3Dgalaphim.net%26origin%3Dhttps%253A%252F%252Fgalaphim.net%252Ffa52e5922ddc0c%26relation%3Dparent.parent&amp;color_scheme=dark&amp;container_width=960&amp;height=100&amp;href=https%3A%2F%2Fcmt.galaphim.net%2Fem-la-thanh-tri-doanh-luy-cua-anh&amp;locale=vi_VN&amp;mobile=true&amp;numposts=5&amp;order_by=reverse_time&amp;sdk=joey&amp;version=v9.0&amp;width=" style="border: none; visibility: visible; width: 100%; height: 278px;" class=""></iframe></span></div>
+                        </div>
+                    </div>
+                    <div class="col s-12 m-4 l-3">
+                        <div class="film-relate">
+                            <div class="film-relate__title">
+                                <div class="film-relate__headding">Nổi bật</div>
+                                <div class="tab">
+                                    <div class="tab-item active">Ngày</div>
+                                    <div class="tab-item ">Tuần</div>
+                                    <div class="tab-item">Tháng</div>
+                                </div>
+                            </div>
+                            <div class="film-relate__tab">
+                                <div class="film-relate__item active">
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/be-ha-ben-trai-sep-ben-phai.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Đấu la đại lục</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 88.6k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/be-ha-ben-trai-sep-ben-phai.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Bệ Hạ Bên Trái Sếp Bên Phải</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 38.6k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/cuong-dao.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Cuồng Đao</a>
+                                            <a href="film.html" class="film-relate__name-origin">Sword Man</a>
+                                            <div class="film-relate__view"> 58.9k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/dai-chien-thai-binh-duong.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Đại Chiến Thái Bình Dương</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 28.1k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/Doc-than-dua-vao-thuc-luc.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Độc Thân Đựa Vào Thực Lực</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 78.2k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/doi-mat-am-duong.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Đấu la đại lục</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 58.6k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/Doi-song-nguc-tu.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Đấu la đại lục</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 89k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/nguoi-me-that-su.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Người Mẹ Thật Sự</a>
+                                            <a href="film.html" class="film-relate__name-origin">Mother Real Land</a>
+                                            <div class="film-relate__view"> 34.6k lượt xem</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="film-relate__item">
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/dai-chien-thai-binh-duong.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Đại Chiến Thái Bình Dương</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 28.1k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/Doc-than-dua-vao-thuc-luc.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Độc Thân Đựa Vào Thực Lực</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 78.2k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/doi-mat-am-duong.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Đấu la đại lục</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 58.6k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/Doi-song-nguc-tu.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Đấu la đại lục</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 89k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/nguoi-me-that-su.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Người Mẹ Thật Sự</a>
+                                            <a href="film.html" class="film-relate__name-origin">Mother Real Land</a>
+                                            <div class="film-relate__view"> 34.6k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/be-ha-ben-trai-sep-ben-phai.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Đấu la đại lục</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 88.6k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/be-ha-ben-trai-sep-ben-phai.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Bệ Hạ Bên Trái Sếp Bên Phải</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 38.6k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/cuong-dao.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Cuồng Đao</a>
+                                            <a href="film.html" class="film-relate__name-origin">Sword Man</a>
+                                            <div class="film-relate__view"> 58.9k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/dai-chien-thai-binh-duong.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Đại Chiến Thái Bình Dương</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 28.1k lượt xem</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="film-relate__item">
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/cuong-dao.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Cuồng Đao</a>
+                                            <a href="film.html" class="film-relate__name-origin">Sword Man</a>
+                                            <div class="film-relate__view"> 58.9k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/dai-chien-thai-binh-duong.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Đại Chiến Thái Bình Dương</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 28.1k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/Doc-than-dua-vao-thuc-luc.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Độc Thân Đựa Vào Thực Lực</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 78.2k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/doi-mat-am-duong.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Đấu la đại lục</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 58.6k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/be-ha-ben-trai-sep-ben-phai.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Đấu la đại lục</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 88.6k lượt xem</div>
+                                        </div>
+                                    </div>
+                                    <div class="film-relate__wrap">
+                                        <div class="film-relate__img" style="background-image: url(assets/img/film/be-ha-ben-trai-sep-ben-phai.jpg);">
+                                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div class="film-relate__content">
+                                            <a href="film.html" class="film-relate__name">Bệ Hạ Bên Trái Sếp Bên Phải</a>
+                                            <a href="film.html" class="film-relate__name-origin">Soul Land</a>
+                                            <div class="film-relate__view"> 38.6k lượt xem</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="film-rate bg-2">
+            <div class="rate-title bg-1">
+                <div class="grid wide">
+                    <div class="film__heading">Để lại đánh giá của bạn</div>
+                    <input type="checkbox" id="open-tabl" hidden>
+                    <label for="open-tablist" class="overlay"></label>
+                    <div class="tab__list">
+                        <div class="tab__item active">Bình Luận</div>
+                        <div class="tab__item">Đánh giá</div>
+                        <div class="tab__line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid wide">
+                <div class="row gt-l">
+                    <div class="col l-8 m-12">
+                        <div class="tab__content">
+                            <div class="tab__page active">
+                                <div class="tab-rate">
+                                    <textarea class="tab-rate__input" name="" id="" cols="30" rows="6" placeholder="Để lại bình luận của bạn"></textarea>
+                                    <div class="btn btn-pink size-s">Gửi</div>
+                                </div>
+                                <div class="tab-comment">
+                                    <p class="sort-text">Xếp theo</p>
+                                    <div class="tab-comment-sort">
+                                        <input type="checkbox" id="open-tabsort" hidden>
+                                        <label for="open-tabsort" class="sort--headding">Mới nhất</label>
+                                        <label for="open-tabsort" class="open-icon"></label>
+                                        <label for="open-tabsort" class="overlay"></label>
+                                        <ul class="sort-list">
+                                            <li class="sort-item">Mới nhất</li>
+                                            <li class="sort-item">Liên quan nhất</li>
+                                        </ul>
+                                    </div>
+                                    <ul class="tab-comment-list">
+                                        <li class="tab-comment__item">
+                                            <div class="comment-head">
+                                                <img src="./assets/img/acount/photo.png" class="tab-comment__img"></img>
+                                                <div>
+                                                    <div class="tab-comment__name">Cathryn Foreman</div>
+                                                    <div class="tab-comment__time">2021-02-25 15:20:17</div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <div class="comment-body__text">HD xem đầy đủ phiên bản trực tuyến của Phim & Chương trình Truyền hình Miễn phí Trực tuyến 2021 xem ngay FMOVIES21.ORG</div>
+                                                <div class="comment-body__control">
+                                                    <div class="control-like">
+                                                        <span><i class="fas fa-thumbs-up"></i>
+                                                        0</span>
+                                                        <span><i class="fas fa-thumbs-down"></i>
+                                                        0</span>
+                                                    </div>
+                                                    <div class="control-reply">
+                                                        <span><i class="fas fa-share"></i>
+                                                        Reply</span>
+                                                        <span><i class="fas fa-quote-right"></i>
+                                                        Quote</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="tab-comment__item">
+                                            <div class="comment-head">
+                                                <img src="./assets/img/acount/photo.png" class="tab-comment__img"></img>
+                                                <div>
+                                                    <div class="tab-comment__name">Cathryn Foreman</div>
+                                                    <div class="tab-comment__time">2021-02-25 15:20:17</div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <div class="comment-body__text">HD xem đầy đủ phiên bản trực tuyến của Phim & Chương trình Truyền hình Miễn phí Trực tuyến 2021 xem ngay FMOVIES21.ORG</div>
+                                                <div class="comment-body__control">
+                                                    <div class="control-like">
+                                                        <span><i class="fas fa-thumbs-up"></i>
+                                                        0</span>
+                                                        <span><i class="fas fa-thumbs-down"></i>
+                                                        0</span>
+                                                    </div>
+                                                    <div class="control-reply">
+                                                        <span><i class="fas fa-share"></i>
+                                                        Reply</span>
+                                                        <span><i class="fas fa-quote-right"></i>
+                                                        Quote</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="tab-comment__item">
+                                            <div class="comment-head">
+                                                <img src="./assets/img/acount/photo.png" class="tab-comment__img"></img>
+                                                <div>
+                                                    <div class="tab-comment__name">Cathryn Foreman</div>
+                                                    <div class="tab-comment__time">2021-02-25 15:20:17</div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <div class="comment-body__text">HD xem đầy đủ phiên bản trực tuyến của Phim & Chương trình Truyền hình Miễn phí Trực tuyến 2021 xem ngay FMOVIES21.ORG</div>
+                                                <div class="comment-body__control">
+                                                    <div class="control-like">
+                                                        <span><i class="fas fa-thumbs-up"></i>
+                                                        0</span>
+                                                        <span><i class="fas fa-thumbs-down"></i>
+                                                        0</span>
+                                                    </div>
+                                                    <div class="control-reply">
+                                                        <span><i class="fas fa-share"></i>
+                                                        Reply</span>
+                                                        <span><i class="fas fa-quote-right"></i>
+                                                        Quote</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="tab-comment__item">
+                                            <div class="comment-head">
+                                                <img src="./assets/img/acount/photo.png" class="tab-comment__img"></img>
+                                                <div>
+                                                    <div class="tab-comment__name">Cathryn Foreman</div>
+                                                    <div class="tab-comment__time">2021-02-25 15:20:17</div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <div class="comment-body__text">HD xem đầy đủ phiên bản trực tuyến của Phim & Chương trình Truyền hình Miễn phí Trực tuyến 2021 xem ngay FMOVIES21.ORG</div>
+                                                <div class="comment-body__control">
+                                                    <div class="control-like">
+                                                        <span><i class="fas fa-thumbs-up"></i>
+                                                        0</span>
+                                                        <span><i class="fas fa-thumbs-down"></i>
+                                                        0</span>
+                                                    </div>
+                                                    <div class="control-reply">
+                                                        <span><i class="fas fa-share"></i>
+                                                        Reply</span>
+                                                        <span><i class="fas fa-quote-right"></i>
+                                                        Quote</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab__page">
+                                <div class="tab-comment-list">
+                                    <ul class="tab-comment-list">
+                                        <li class="tab-comment__item">
+                                            <div class="comment-head">
+                                                <img src="./assets/img/acount/photo.png" class="tab-comment__img"></img>
+                                                <div class="mr-auto">
+                                                    <div class="tab-comment__name">Cathryn Foreman</div>
+                                                    <div class="tab-comment__time">2021-02-25 15:20:17</div>
+                                                </div>
+                                                <div class="tab-comment__review">
+                                                    <i class="fas fa-star"></i> 8.9
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <div class="comment-body__text">HD xem đầy đủ phiên bản trực tuyến </div>
+                                            </div>
+                                        </li>
+                                        <li class="tab-comment__item">
+                                            <div class="comment-head">
+                                                <img src="./assets/img/acount/photo.png" class="tab-comment__img"></img>
+                                                <div class="mr-auto">
+                                                    <div class="tab-comment__name">Cathryn Foreman</div>
+                                                    <div class="tab-comment__time">2021-02-25 15:20:17</div>
+                                                </div>
+                                                <div class="tab-comment__review">
+                                                    <i class="fas fa-star"></i> 8.9
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <div class="comment-body__text">HD xem đầy đủ phiên bản trực tuyến </div>
+                                            </div>
+                                        </li>
+                                        <li class="tab-comment__item">
+                                            <div class="comment-head">
+                                                <img src="./assets/img/acount/photo.png" class="tab-comment__img"></img>
+                                                <div class="mr-auto">
+                                                    <div class="tab-comment__name">Cathryn Foreman</div>
+                                                    <div class="tab-comment__time">2021-02-25 15:20:17</div>
+                                                </div>
+                                                <div class="tab-comment__review">
+                                                    <i class="fas fa-star"></i> 8.9
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <div class="comment-body__text">HD xem đầy đủ phiên bản trực tuyến </div>
+                                            </div>
+                                        </li>
+                                        <li class="tab-comment__item">
+                                            <div class="comment-head">
+                                                <img src="./assets/img/acount/photo.png" class="tab-comment__img"></img>
+                                                <div class="mr-auto">
+                                                    <div class="tab-comment__name">Cathryn Foreman</div>
+                                                    <div class="tab-comment__time">2021-02-25 15:20:17</div>
+                                                </div>
+                                                <div class="tab-comment__review">
+                                                    <i class="fas fa-star"></i> 8.9
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <div class="comment-body__text">HD xem đầy đủ phiên bản trực tuyến </div>
+                                            </div>
+                                        </li>
+                                        <li class="tab-comment__item">
+                                            <div class="comment-head">
+                                                <img src="./assets/img/acount/photo.png" class="tab-comment__img"></img>
+                                                <div class="mr-auto">
+                                                    <div class="tab-comment__name">Cathryn Foreman</div>
+                                                    <div class="tab-comment__time">2021-02-25 15:20:17</div>
+                                                </div>
+                                                <div class="tab-comment__review">
+                                                    <i class="fas fa-star"></i> 8.9
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <div class="comment-body__text">HD xem đầy đủ phiên bản trực tuyến </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-rate">
+                                    <textarea class="tab-rate__input" name="" id="" cols="30" rows="10" placeholder="Review"></textarea>
+                                    <input type="range" min="0" max="100" value="43" class="range__rate" id="myRange"> <span id="ratting" class="range-rate__number">0</span>
+                                    <div class="btn btn-pink size-s">Gửi</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4">
+                        <div class="film__heading">Có thể bạn sẽ thích...</div>
+                        <div class="row gt-s">
+                            <div class="col s-6">
+                                <div class="film__item">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/ngoai-gia-lam-chieu.jpg);">
+                                        <span class="film__resolution">HD-VietSub</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">88 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="#" class="film__name">Ngoại Già Lắm Chiêu</a>
+                                        <p class="film__name-origin">Grannys Got Talent</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/ong-ban-gang-to.jpg);">
+                                    <span class="film__resolution">HDRip</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">116 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="#" class="film__name">Ông Bạn Găng Tơ</a>
+                                    <p class="film__name-origin">Man Of Men / Peopekteu maen</p>
+                                </div>
+                            </div>
+                            <div class="col s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/phap-su-mu.jpg);">
+                                    <span class="film__resolution">FullHD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">120 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="#" class="film__name">Pháp Sư Mù: Ai Chết Giơ Tay</a>
+                                    <p class="film__name-origin">Blind Mage: Who's Died Raise Your Hand?</p>
+                                </div>
+                            </div>
+                            <div class="col s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/quy-ong-cua-toi.jpg);">
+                                    <span class="film__resolution">HD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">120 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="#" class="film__name">Quý Ông Của Tôi</a>
+                                    <p class="film__name-origin">My Mister</p>
+                                </div>
+                            </div>
+                            <div class="col s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/sac-dep-doi-tra.jpg);">
+                                    <span class="film__resolution">FullHD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">24/24 Tập</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="#" class="film__name">Sắc Đẹp Dối Trá</a>
+                                    <p class="film__name-origin">Sac dep doi tra</p>
+                                </div>
+                            </div>
+                            <div class="col s-6">
+                                <div class="film__item">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/che-phuc.jpg);">
+                                        <span class="film__resolution">FullHD</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">92 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="#" class="film__name">Chế Phục</a>
+                                        <p class="film__name-origin">A Chilling Cosplay</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-2 m-2 s-6">
+                    <h6 class="footer__title">GalaPhim</h6>
+                    <ul class="footer__list">
+                        <li><a href="listFilm.html">Phim mới</a></li>
+                        <li><a href="listFilm.html">Phim lẻ mới</a></li>
+                        <li><a href="listFilm.html">Phim bộ mới</a></li>
+                        <li><a href="listFilm.html">Phim chiếu rạp</a></li>
+                        <li><a href="listFilm.html">Tin tức</a></li>
+                    </ul>
+                </div>
+                <div class="col l-3 m-3 s-6">
+                    <h6 class="footer__title">Phim Hay</h6>
+                    <ul class="footer__list">
+                        <li><a href="listFilm.html">Phim hay Việt Nam</a></li>
+                        <li><a href="listFilm.html">Phim hay Trung Quốc</a></li>
+                        <li><a href="listFilm.html">Phim hay Hàn Quốc</a></li>
+                        <li><a href="listFilm.html">Phim hay Ấn Độ</a></li>
+                        <li><a href="listFilm.html">Phim hay Thái Lan</a></li>
+                    </ul>
+                </div>
+                <div class="col l-2 m-2 s-4">
+                    <h6 class="footer__title">Phim Mới</h6>
+                    <ul class="footer__list">
+                        <li><a href="listFilm.html">Phim3s</a></li>
+                        <li><a href="listFilm.html">VTV16</a></li>
+                        <li><a href="listFilm.html">YeuPhimMoi</a></li>
+                        <li><a href="listFilm.html">KhoaiTV</a></li>
+                        <li><a href="listFilm.html">HDonline</a></li>
+                        <li><a href="listFilm.html">Motphim</a></li>
+                        <li><a href="listFilm.html">Kphim</a></li>
+                        <li><a href="listFilm.html">Bongngo</a></li>
+                    </ul>
+                </div>
+                <div class="col l-2 m-2 s-4">
+                    <h6 class="footer__title">Phim Online</h6>
+                    <ul class="footer__list">
+                        <li><a href="listFilm.html">BiluTV</a></li>
+                        <li><a href="listFilm.html">Vuviphim</a></li>
+                        <li><a href="listFilm.html">Vkool</a></li>
+                        <li><a href="listFilm.html">PhimNhanh</a></li>
+                        <li><a href="listFilm.html">Phim4400</a></li>
+                        <li><a href="listFilm.html">BanhTV</a></li>
+                        <li><a href="listFilm.html">TVhay</a></li>
+                        <li><a href="listFilm.html">DongPhim</a></li>
+                    </ul>
+                </div>
+                <div class="col l-3 m-2 s-4">
+                    <h6 class="footer__title">Contact</h6>
+                    <a class="footer-link" href="listFilm.html">Góp ý: info@galaphim.net</a>
+                    <ul class="footer__social">
+                        <li class="facebook"><a href="https://www.facebook.com/phuong.giang.92317121"><i class="fab fa-facebook-square"></i></a></li>
+                        <li class="instagram"><a href="listFilm.html"><i class="fab fa-instagram"></i></a></li>
+                        <li class="twitter"><a href="https://www.youtube.com/"><i class="fab fa-twitter"></i></a></li>
+                        <li class="vk"><a href="https://www.youtube.com/"><i class="fab fa-vk"></i></a></li>
+                    </ul>
+                    <div class="footer__app">
+                        <h6 class="footer__title">Download Our App</h6>
+                        <div class="row">
+                            <a class="col l-6 m-12" href="https://play.google.com/"><img class="app-connect__img" src="./assets/img/logo/google-play.png" alt=""></a>
+                            <a class="col l-6 m-12" href="https://www.apple.com"><img class="app-connect__img" src="./assets/img/logo/appstore.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s-12">
+                    <div class="copyright">
+                        <small>© 2021 <a href="listFilm.html"><strong>Xemphimplus</strong></a>. Copyright by <a href="https://www.facebook.com/phuong.giang.92317121">Phuong Giang</a></small>
+                        <ul class="copyright__list">
+                            <li><a href="#"><strong>Góp ý</strong></a></li>
+                            <li><a href="#"><strong>Chính sách</strong></a></li>
+                            <li><a href="#"><strong>Điều khoản</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+        const tabs = $$('.tab__item');
+        const pages = $$('.tab__page');
+        const tabActive = $('.tab__item.active')
+        const line = $('.tab__line');
+        line.style.left = tabActive.offsetLeft + 'px';
+        line.style.width = tabActive.offsetWidth + 'px';
+        tabs.forEach((tab, index) => {
+            const page = pages[index];
+            tab.onclick = function() {
+                $('.tab__item.active').classList.remove('active');
+                $('.tab__page.active').classList.remove('active');
+                this.classList.add('active');
+                page.classList.add('active');
+                line.style.left = this.offsetLeft + 'px';
+                line.style.width = this.offsetWidth + 'px';
+            }
+        });
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("ratting");
+        output.innerHTML = slider.value / 10;
+        slider.oninput = function() {
+            output.innerHTML = this.value / 10;
+        }
+
+
+        const tabFilms = $$('.tab-item');
+        const pageFilms = $$('.film-relate__item');
+        tabFilms.forEach((tabFilm, index) => {
+            const pageFilm = pageFilms[index];
+            tabFilm.onclick = function() {
+                $('.tab-item.active').classList.remove('active');
+                $('.film-relate__item.active').classList.remove('active');
+                this.classList.add('active');
+                pageFilm.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html

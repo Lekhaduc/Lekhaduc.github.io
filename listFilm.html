@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách Phim</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/library.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/listFilm.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="header__logo">
+            <img src="https://galaphim.net/images/logo/logo.webp" att="Ảnh">
+        </a>
+        <input type="checkbox" id="open-navbar" hidden>
+        <label for="open-navbar" class="overlay bg-black"></label>
+        <ul class="header__nav">
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Phim mới</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Phim lẻ</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Phim bộ</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Phim chiếu rạp</a>
+            </li>
+            <li class="header__nav-item">
+                <label for="open-category" class="header__nav-link">Thể loại</label>
+                <input type="checkbox" id="open-category" hidden>
+                <label for="open-category" class="overlay"></label>
+                <ul class="subnav__list">
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Hành động</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Chiến Tranh</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Kịch Tính</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Anime</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Lãng Mạn</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Đam Mỹ</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Kiếm Hiệp</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tiên Hiệp</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Võ Thuật</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">TV Show</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tài Liệu</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Cổ Trang</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Thần Thoại</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tình Cảm</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Ngôn Tình</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tâm Lý</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Hoạt Hình</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Thể Thao</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Khoa Học</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tội Phạm Học</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Âm Nhạc</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__nav-item">
+                <label for="open-nation" class="header__nav-link">Quốc gia</label>
+                <input type="checkbox" id="open-nation" hidden>
+                <label for="open-nation" class="overlay"></label>
+                <ul class="subnav__list">
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Trung Quốc</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Ấn Độ</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Nhật Bản</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Mỹ</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Thái Lan</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Hồng Kông</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Pháp</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Anh</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Đức</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tây Ban Nha</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Việt Nam</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Đài Loan</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Âu Mỹ</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Indonesia</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Na uy</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Turkey</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Italy</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Poland</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Sắp chiếu</a>
+            </li>
+        </ul>
+        <div class="header__control">
+            <label for="open-search" class="control-search">
+                    <i class="fas fa-search"></i>
+                    <input type="checkbox" id="open-search" hidden>
+                    <label for="open-search" class="overlay"></label>
+            <div class="header__search">
+                <div class="header__search-wrap">
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm theo tên, diễn viên, đạo diễn, thể loại,...">
+                    <a href="listFilm.html" class="btn btn-pink size-s">Tìm kiếm</a>
+                </div>
+            </div>
+            </label>
+            <label for="show__notify-body" class="control-notify have">
+                    <i class="fas fa-bell"></i>
+                    <span class="notify__amount">3</span>
+            </label>
+            <label class="control-login">
+                <a href="login.html" class="btn btn-pink size-l">Đăng nhập</a>
+                <a href="login.html" class="login-icon"><i class="fas fa-sign-in-alt"></i></a>
+            </label>
+        </div>
+        <label for="open-navbar" class="navbar-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+    <div class="main">
+        <div class="breadcrumb" style="background-image: linear-gradient(0, rgba(29, 31, 48, 0.8), rgba(53, 54, 64, 0.9)), url(assets/img/background/B-dai-thoai-tay-du.jpg);">
+            <div class="grid wide">
+                <div class="breadcrumb__content">
+                    <h3 class="film__heading">Danh sách phim</h3>
+                    <ul class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a href="index.html" class="breadcrumb__link">Trang chủ</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <a href="listFilm.html" class="breadcrumb__link">Danh sách phim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="filter">
+            <div class="grid wide">
+                <div class="filter__content">
+                    <ul class="filter__list">
+                        <li class="filter__item">Chuyên mục:
+                            <label for="show-menu1" class="filter__detail">
+                                Tất cả
+                                <input type="checkbox" id="show-menu1" hidden>
+                                <label for="show-menu1" class="overlay"></label>
+                            <span class="open-icon"></span>
+                            <ul class="menu--list">
+                                <li class="menu--item"> <a class="menu--link" href="listFilm.html">Tất cả</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Hành động</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Khoa học</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Kinh Dị</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Tình cảm</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Cổ Trang</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Hành động</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Khoa học</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Kinh Dị</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Tình cảm</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Cổ Trang</a></li>
+                            </ul>
+                            </label>
+                        </li>
+                        <li class="filter__item">Quốc gia:
+                            <label for="show-menu2" class="filter__detail">
+                                Tất cả
+                                <input type="checkbox" id="show-menu2" hidden>
+                                <label for="show-menu2" class="overlay"></label>
+                            <span class="open-icon"></span>
+                            <ul class="menu--list">
+                                <li class="menu--item"> <a class="menu--link" href="#">Tất cả</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Hành động</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Khoa học</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Kinh Dị</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Tình cảm</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Cổ Trang</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Hành động</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Khoa học</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Kinh Dị</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Tình cảm</a></li>
+                                <li class="menu--item"> <a class="menu--link" href="#">Cổ Trang</a></li>
+                            </ul>
+                            </label>
+                        </li>
+                        <li class="filter__item">IMDd:
+                            <label for="show-rateting" class="filter__detail">
+                                <span id="ratting">0.0 </span> - 8.6
+                                <input type="checkbox" id="show-rateting" hidden>
+                                <label for="show-rateting" class="overlay"></label>
+                            <span class="open-icon"></span>
+                            <div class="menu-range">
+                                <input type="range" min="0" max="100" value="43" class="range" id="myRange">
+                            </div>
+                            </label>
+                        </li>
+                        <li class="filter__item">Năm:
+                            <label for="show-year" class="filter__detail">
+                                <span id="year">1978</span> - 2021
+                                <input type="checkbox" id="show-year" hidden>
+                                <label for="show-year" class="overlay"></label>
+                            <span class="open-icon"></span>
+                            <div class="menu-range">
+                                <input type="range" min="1987" max="2021" value="2011" class="range" id="myRange2">
+                            </div>
+                            </label>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-pink size-s">Lọc</a>
+                </div>
+            </div>
+        </div>
+        <div class="list-film bg-2">
+            <div class="grid wide">
+                <div class="row gt-s">
+                    <div class="col l-6 m-12 s-6">
+                        <div class="film__item detail">
+                            <div class="film__cover" style="background-image: url(assets/img/film/cuong-dao.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">92 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Cuồng Đao</a>
+                                <p class="film__name-origin">A Chilling Cosplay</p>
+                                <a href="listFilm.html" class="film__category">Hành Động, Võ Thuật, Cổ Trang</a>
+                                <a href="listFilm.html" class="film__nation">Phim Trung Quốc</a>
+                                <p class="film__imdb">IMDb 7.5</p>
+                                <p class="film__description">Cuồng Đao - Soul of Blades nội dung nói về một thanh kim đao do gia tộc đúc kiếm Nam Cung đúc ra bị kiếm khách "Tần Nhất Đao" cướp mất, kim đao có sức mê hoặc cực lớn, trên giang hồ bắt đầu treo thưởng bắt hắn. Trong một
+                                    lần trốn truy sát, Tần Nhất Đao nhặt được một cậu bé tên A Cẩu và dẫn cậu đến vùng đất hỗn loạn "Tam Bất Quản". Sau khi A Cẩu trưởng thành, tiểu thư gia tộc Nam Cung biết được vị trí của kẻ thù, dùng khổ nhục kế tiếp
+                                    cập A Cẩu, ý đồ lợi dụng A Cẩu giết chết Tần Nhất Đao, mà lúc này A Cẩu đã biết được bí mật của kim đao...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 s-6">
+                        <div class="film__item detail">
+                            <div class="film__cover" style="background-image: url(assets/img/film/B-be-ha-ben-trai-sep-ben-phai.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">18 Tập</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Bệ Hạ Bên Trái, Sếp Bên Phải</a>
+                                <p class="film__name-origin">Emperor or Boss</p>
+                                <a href="listFilm.html" class="film__category">Lịch Sử, Tình Cảm</a>
+                                <a href="listFilm.html" class="film__nation">Phim Trung Quốc</a>
+                                <p class="film__imdb">IMDb 7.2</p>
+                                <p class="film__description">Bệ Hạ Bên Trái, Sếp Bên Phải là bộ phim Tình Cảm kể về một nữ anh hùng Fubao yêu ông chủ của mình. và dựa vào ghi chú để hiện thực hóa mong muốn đánh gục sếp của mình. Đột nhiên, một vị hoàng tử cổ đại tự nhận là chủ nhân
+                                    của tờ giấy điều ước từ trên trời rơi xuống, để lấy lại tờ giấy bạc đó, anh ta còn tung ra một cuộc tấn công truy đuổi Fubao, kể từ đó, Fubao là câu chuyện về chàng thú cưng thành thị. không ngừng luân chuyển và lắc
+                                    lư giữa hai nam thần.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 s-6">
+                        <div class="film__item detail">
+                            <div class="film__cover" style="background-image: url(assets/img/film/mo-vuong-chi-vuong.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">40 Tập</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Mộ Vương Chi Vương</a>
+                                <p class="film__name-origin">Great King of the Grave</p>
+                                <a href="listFilm.html" class="film__category">Hài Hước, Lịch Sử, Tình Cảm</a>
+                                <a href="listFilm.html" class="film__nation">Phim Trung Quốc</a>
+                                <p class="film__imdb">IMDb 7.5</p>
+                                <p class="film__description">Mộ Vương Chi Vương Luo Wu Zi giúp Li Si Xiu đắp ụ Tần Thủy Hoàng; vị hoàng đế đầu tiên thống nhất Trung Quốc. Các đệ tử của ông tiếp tục xây dựng và bảo vệ bia mộ hoàng gia. Ở giữa là sự xuất hiện của Cửu vĩ mộ, còn được
+                                    gọi là Đại vương mộ. Trong hàng ngàn năm, các ngôi mộ không bao giờ bị cướp. Những người bên ngoài coi những người bảo vệ lăng mộ này giống như Tomb Sect. Sau cái chết của Luo Wu Zi, vị trí Grave King được chuyển giao
+                                    cho đệ tử lớn nhất của ông, Mu Rong Xi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 s-6">
+                        <div class="film__item detail">
+                            <div class="film__cover" style="background-image: url(assets/img/film/tu-tien-truyen-chi-luyen-kiem.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">85 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Tu Tiên Truyện Chi Luyện Kiếm</a>
+                                <p class="film__name-origin">Blade of Flame</p>
+                                <a href="listFilm.html" class="film__category">Hành Động, Viễn Tưởng, Võ Thuật, Cổ Trang</a>
+                                <a href="listFilm.html" class="film__nation">Phim Trung Quốc</a>
+                                <p class="film__imdb">IMDb 6.4</p>
+                                <p class="film__description">Tu Tiên Truyện Chi Luyện Kiếm - Blade of Flame là câu chuyện về nhân vật Thiết Kiên. Một thanh niên bình thường sống dưới chân Thiên Kiếp Lộ. Chàng khát khao tu tiên nhưng sinh ra không có Kiếm Hồn nên không thể tu luyện.
+                                    Nhờ cơ duyên xảo hợp, Thiết Kiên rút được thanh Phẫn Tâm Kiếm do Kiếm Thánh để lại, và một cổ lực lượng “dị hỏa” thần bí đã thâm nhập vào cơ thể chàng.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 s-6">
+                        <div class="film__item detail">
+                            <div class="film__cover" style="background-image: url(assets/img/film/doi-mat-am-duong.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">100 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Đôi Mắt Âm Dương</a>
+                                <p class="film__name-origin">Doi Mat Am Duong</p>
+                                <a href="listFilm.html" class="film__category">Kinh Dị</a>
+                                <a href="listFilm.html" class="film__nation">Phim Việt Nam</a>
+                                <p class="film__imdb">IMDb 7.8</p>
+                                <p class="film__description">Đôi Mắt Âm Dương là phim kinh dị hài hước, có hai diễn viên truyền hình hot nhất của Về Nhà Đi Con là Bảo Thanh và Quốc Trường. Bộ phim xoay quanh họa sĩ Trang (Thu Trang) - một người bị mất trí nhớ tạm thời sau tai nạn
+                                    xe hơi. Kể từ khi bình phục và trở về nhà, cô luôn thấy hình bóng ai đó nhẹ nhàng đi theo cô mọi lúc mọi nơi, bất kể ngày đêm với đôi mắt đầy máu. Dần dần đào sâu mọi chuyện cũng như được người chồng (Quốc Trường) khơi
+                                    gợi lại ký ức cũ nên Trang đã nhớ ra mọi chuyện, và sự thật không hề đơn giản như một vụ tai nạn giao thông</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 s-6">
+                        <div class="film__item detail">
+                            <div class="film__cover" style="background-image: url(assets/img/film/dai-chien-thai-binh-duong.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">131 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Đại Chiến Thái Bình Dương</a>
+                                <p class="film__name-origin">Pacific Rim</p>
+                                <a href="listFilm.html" class="film__category">Hành Động, Phiêu Lưu, Viễn Tưởng</a>
+                                <a href="listFilm.html" class="film__nation">Phim Mỹ</a>
+                                <p class="film__imdb">IMDb 7.5</p>
+                                <p class="film__description">Phim Đại Chiến Thái Bình Dương - Pacific Rim 2013 lấy bối cảnh Trái Đất ở tương lai, khi các quái vật biển khổng lồ có tên gọi Kaiju tấn công và đe dọa diệt vong nhân loại. Loài người nghĩ ra một loại vũ khí đặc biệt có
+                                    tên Jaeger - những robot khổng lồ được điều khiển bởi thần kinh của con người, nhằm chống lại những quái vật Kaiju từ vành đai Pacific Rim.Xem phim online này bạn sẽ thấy Jaeger có tên Gypsy được Raleigh cùng anh trai
+                                    Yanci điều khiển đã tiêu diệt được rất nhiều Kaiju. Tuy nhiên, một lần đụng độ với con Kaiju quá hung hãn, người anh trai Yanci đã vĩnh viễn ra đi. Sau trận chiến ấy, Raleigh lang bạt khắp nơi trên Trái Đất, trở thành
+                                    một công nhân. Tới một ngày, Tổng tư lệnh Stacker đề nghị anh và các chiến binh tinh nhuệ nhất làm một cuộc tấn công vào rãnh nứt Pacific Rim dưới đáy biển - sào huyệt của các Kaiju.Nhưng nếu muốn tiếp tục chiến đấu
+                                    và thắng được trận đánh cuối cùng trong phim Siêu Đại Chiến, Raleigh phải tìm được người thay thế anh trai cùng điều khiển Jaeger với mình. Người có thể kết nối tâm linh với anh sẽ là ai? Và liệu cuộc chiến Pacific
+                                    Rim có thể kết thúc khi lũ Kaiju càng lúc càng mạnh? Kính mời các bạn cùng theo dõi phim hd này nhé! MPAA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 s-6">
+                        <div class="film__item detail">
+                            <div class="film__cover" style="background-image: url(assets/img/film/cuong-dao.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">92 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Cuồng Đao</a>
+                                <p class="film__name-origin">A Chilling Cosplay</p>
+                                <a href="listFilm.html" class="film__category">Hành Động, Võ Thuật, Cổ Trang</a>
+                                <a href="listFilm.html" class="film__nation">Phim Trung Quốc</a>
+                                <p class="film__imdb">IMDb 7.5</p>
+                                <p class="film__description">Cuồng Đao - Soul of Blades nội dung nói về một thanh kim đao do gia tộc đúc kiếm Nam Cung đúc ra bị kiếm khách "Tần Nhất Đao" cướp mất, kim đao có sức mê hoặc cực lớn, trên giang hồ bắt đầu treo thưởng bắt hắn. Trong một
+                                    lần trốn truy sát, Tần Nhất Đao nhặt được một cậu bé tên A Cẩu và dẫn cậu đến vùng đất hỗn loạn "Tam Bất Quản". Sau khi A Cẩu trưởng thành, tiểu thư gia tộc Nam Cung biết được vị trí của kẻ thù, dùng khổ nhục kế tiếp
+                                    cập A Cẩu, ý đồ lợi dụng A Cẩu giết chết Tần Nhất Đao, mà lúc này A Cẩu đã biết được bí mật của kim đao...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 s-6">
+                        <div class="film__item detail">
+                            <div class="film__cover" style="background-image: url(assets/img/film/B-be-ha-ben-trai-sep-ben-phai.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">18 Tập</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Bệ Hạ Bên Trái, Sếp Bên Phải</a>
+                                <p class="film__name-origin">Emperor or Boss</p>
+                                <a href="listFilm.html" class="film__category">Lịch Sử, Tình Cảm</a>
+                                <a href="listFilm.html" class="film__nation">Phim Trung Quốc</a>
+                                <p class="film__imdb">IMDb 7.2</p>
+                                <p class="film__description">Bệ Hạ Bên Trái, Sếp Bên Phải là bộ phim Tình Cảm kể về một nữ anh hùng Fubao yêu ông chủ của mình. và dựa vào ghi chú để hiện thực hóa mong muốn đánh gục sếp của mình. Đột nhiên, một vị hoàng tử cổ đại tự nhận là chủ nhân
+                                    của tờ giấy điều ước từ trên trời rơi xuống, để lấy lại tờ giấy bạc đó, anh ta còn tung ra một cuộc tấn công truy đuổi Fubao, kể từ đó, Fubao là câu chuyện về chàng thú cưng thành thị. không ngừng luân chuyển và lắc
+                                    lư giữa hai nam thần.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 s-6">
+                        <div class="film__item detail">
+                            <div class="film__cover" style="background-image: url(assets/img/film/mo-vuong-chi-vuong.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">40 Tập</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Mộ Vương Chi Vương</a>
+                                <p class="film__name-origin">Great King of the Grave</p>
+                                <a href="listFilm.html" class="film__category">Hài Hước, Lịch Sử, Tình Cảm</a>
+                                <a href="listFilm.html" class="film__nation">Phim Trung Quốc</a>
+                                <p class="film__imdb">IMDb 7.5</p>
+                                <p class="film__description">Mộ Vương Chi Vương Luo Wu Zi giúp Li Si Xiu đắp ụ Tần Thủy Hoàng; vị hoàng đế đầu tiên thống nhất Trung Quốc. Các đệ tử của ông tiếp tục xây dựng và bảo vệ bia mộ hoàng gia. Ở giữa là sự xuất hiện của Cửu vĩ mộ, còn được
+                                    gọi là Đại vương mộ. Trong hàng ngàn năm, các ngôi mộ không bao giờ bị cướp. Những người bên ngoài coi những người bảo vệ lăng mộ này giống như Tomb Sect. Sau cái chết của Luo Wu Zi, vị trí Grave King được chuyển giao
+                                    cho đệ tử lớn nhất của ông, Mu Rong Xi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 s-6">
+                        <div class="film__item detail">
+                            <div class="film__cover" style="background-image: url(assets/img/film/tu-tien-truyen-chi-luyen-kiem.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">85 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Tu Tiên Truyện Chi Luyện Kiếm</a>
+                                <p class="film__name-origin">Blade of Flame</p>
+                                <a href="listFilm.html" class="film__category">Hành Động, Viễn Tưởng, Võ Thuật, Cổ Trang</a>
+                                <a href="listFilm.html" class="film__nation">Phim Trung Quốc</a>
+                                <p class="film__imdb">IMDb 6.4</p>
+                                <p class="film__description">Tu Tiên Truyện Chi Luyện Kiếm - Blade of Flame là câu chuyện về nhân vật Thiết Kiên. Một thanh niên bình thường sống dưới chân Thiên Kiếp Lộ. Chàng khát khao tu tiên nhưng sinh ra không có Kiếm Hồn nên không thể tu luyện.
+                                    Nhờ cơ duyên xảo hợp, Thiết Kiên rút được thanh Phẫn Tâm Kiếm do Kiếm Thánh để lại, và một cổ lực lượng “dị hỏa” thần bí đã thâm nhập vào cơ thể chàng.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 s-6">
+                        <div class="film__item detail">
+                            <div class="film__cover" style="background-image: url(assets/img/film/doi-mat-am-duong.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">100 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Đôi Mắt Âm Dương</a>
+                                <p class="film__name-origin">Doi Mat Am Duong</p>
+                                <a href="listFilm.html" class="film__category">Kinh Dị</a>
+                                <a href="listFilm.html" class="film__nation">Phim Việt Nam</a>
+                                <p class="film__imdb">IMDb 7.8</p>
+                                <p class="film__description">Đôi Mắt Âm Dương là phim kinh dị hài hước, có hai diễn viên truyền hình hot nhất của Về Nhà Đi Con là Bảo Thanh và Quốc Trường. Bộ phim xoay quanh họa sĩ Trang (Thu Trang) - một người bị mất trí nhớ tạm thời sau tai nạn
+                                    xe hơi. Kể từ khi bình phục và trở về nhà, cô luôn thấy hình bóng ai đó nhẹ nhàng đi theo cô mọi lúc mọi nơi, bất kể ngày đêm với đôi mắt đầy máu. Dần dần đào sâu mọi chuyện cũng như được người chồng (Quốc Trường) khơi
+                                    gợi lại ký ức cũ nên Trang đã nhớ ra mọi chuyện, và sự thật không hề đơn giản như một vụ tai nạn giao thông</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 s-6">
+                        <div class="film__item detail">
+                            <div class="film__cover" style="background-image: url(assets/img/film/dai-chien-thai-binh-duong.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">131 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Đại Chiến Thái Bình Dương</a>
+                                <p class="film__name-origin">Pacific Rim</p>
+                                <a href="listFilm.html" class="film__category">Hành Động, Phiêu Lưu, Viễn Tưởng</a>
+                                <a href="listFilm.html" class="film__nation">Phim Mỹ</a>
+                                <p class="film__imdb">IMDb 7.5</p>
+                                <p class="film__description">Phim Đại Chiến Thái Bình Dương - Pacific Rim 2013 lấy bối cảnh Trái Đất ở tương lai, khi các quái vật biển khổng lồ có tên gọi Kaiju tấn công và đe dọa diệt vong nhân loại. Loài người nghĩ ra một loại vũ khí đặc biệt có
+                                    tên Jaeger - những robot khổng lồ được điều khiển bởi thần kinh của con người, nhằm chống lại những quái vật Kaiju từ vành đai Pacific Rim.Xem phim online này bạn sẽ thấy Jaeger có tên Gypsy được Raleigh cùng anh trai
+                                    Yanci điều khiển đã tiêu diệt được rất nhiều Kaiju. Tuy nhiên, một lần đụng độ với con Kaiju quá hung hãn, người anh trai Yanci đã vĩnh viễn ra đi. Sau trận chiến ấy, Raleigh lang bạt khắp nơi trên Trái Đất, trở thành
+                                    một công nhân. Tới một ngày, Tổng tư lệnh Stacker đề nghị anh và các chiến binh tinh nhuệ nhất làm một cuộc tấn công vào rãnh nứt Pacific Rim dưới đáy biển - sào huyệt của các Kaiju.Nhưng nếu muốn tiếp tục chiến đấu
+                                    và thắng được trận đánh cuối cùng trong phim Siêu Đại Chiến, Raleigh phải tìm được người thay thế anh trai cùng điều khiển Jaeger với mình. Người có thể kết nối tâm linh với anh sẽ là ai? Và liệu cuộc chiến Pacific
+                                    Rim có thể kết thúc khi lũ Kaiju càng lúc càng mạnh? Kính mời các bạn cùng theo dõi phim hd này nhé! MPAA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <ul class="pagination__list">
+                        <li class="pagination__item">
+                            <a href="listFilm.html" class="pagination__link">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="pagination__item active">
+                            <a href="listFilm.html" class="pagination__link">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="listFilm.html" class="pagination__link">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="listFilm.html" class="pagination__link">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="listFilm.html" class="pagination__link">4</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="listFilm.html" class="pagination__link">5</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="listFilm.html" class="pagination__link">...</a>
+                        </li>
+                        <li class="pagination__item active">
+                            <a href="listFilm.html" class="pagination__link">14</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="listFilm.html" class="pagination__link">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="introduce bg-1">
+            <div class="grid wide">
+                <div class="introduce__wrap" id="introduce">
+                    <p class="film__text">Khi nhu cầu giải trí của người dùng ngày càng tăng nhanh và cụ thể hơn là nhu cầu xemphim của thế hệ trẻ đang rất cao. Thì phim mới nhất là xu hướng người dùng tìm kiếm nhiều nhất. Nên từ 2021 các nhà sản xuất phim mang khá nhiều nội
+                        dung mới nhằm hấp dẫn và đáp ứng nhu cầu giải trí của người dùng. Kéo theo những trang web xem phim miễn phí luôn cập nhập những bộ phimmoi. Nhưng không phải trang web nào cũng có đội ngũ kĩ thuật để cập nhập những bộ phim moi
+                        một cách thường xuyên nhất.
+                    </p>
+                    <p class="film__text"> Vì thấy người dùng quá mệt mỏi trong việc tìm kiếm những bộ phim mới nhất. Nên hôm nay tôi sẽ giới thiệt cho các bạn website xem phim miễn phí chuyên cập nhập những bộ phim mới nhanh nhất nhé.
+                    </p>
+                    <div class="introduce__img">
+                        <img src="https://galaphim.net/storage/photos/shares/xemphimplus.webp" att="Ảnh">
+                    </div>
+                    <h3 class="film__title" style="text-align: center;"> XemPhimPlus - Hệ thống xem phim mới nhanh nhất 2021</h3>
+                    <p class="film__text"> Khi nghành công nghiệp được đẩy mạnh vào năm nay thì rất nhiều trang web<span class="introduct__name">xem phim</span>được ra đời nhằm đáp ứng đủ nhu cầu tăng vọt của người dùng. Và XemphimPlus cũng là một trong số đó. Nhưng website
+                        này đã làm được tốt hơn những thứ người dùng đang cần.</p>
+                    <h3 class="film__title">Vì sao tôi lại nói là XemPhimPlus lại được người dùng ủng hộ đến thế:
+                    </h3>
+                    <ul class="introduce__list">
+                        <li class="introduce__item">Website có kho phim khổng lồ. Và những bộ phim đều được chọn lọc một cách kỹ càng nhằm người dùng có được chất lượng tốt nhất.</li>
+                        <li class="introduce__item">Phim load rất nhanh, ít quảng cáo, người dùng sẽ không bị làm phiền trong những giây phút giải trí.</li>
+                        <li class="introduce__item"> Phim được cập nhập nhanh nhất và mới nhất có khi chỉ công chiếu tại rạp là trang web đã cập nhập. </li>
+                        <li class="introduce__item">Cập nhập đầy đủ các thể loại phim lẻ, phim bộ phim chiếu rạp ...</li>
+                        <li class="introduce__item">Có cả sever vietsub và server thuyết minh nếu người dùng thích.</li>
+                        <li class="introduce__item">Giao diện thân thiện với người dùng và thiết bị. Giúp người dùng dễ dàng thao tác tìm kiếm phim hơn.</li>
+                    </ul>
+                    <p class="film__text">Chính vì những lí do trên mà khi nhắc tới phim mới không thể không nhớ tới xem phim plus được. Tuy là sinh sau đẻ muộn hơn các đàn anh đi trước nhưng được cái rất chăm chỉ chăm chút từng bộ phim. Từ khâu cập nhập những bộ <span class="introduct__name">phim mới</span>                        ra mắt đến chất lượng phim luôn ổn định.</p>
+                    <p class="film__text">Không chỉ mỗi mình phim ảnh mà web site cũng luôn cập nhập những chương trình TVShow đặc sắc để có thể phục vụ được toàn bộ khán giả. Những nội dung trên trang web đều nhắm tới nhu cầu của người dùng. Không chỉ công chiếu Phim thôi
+                        mà trang web cũng phát triển hệ thống bình luận và những bài review phim giúp người dùng có thể hiểu được nội dung của phim. Hoặc có thể vừa xem phim vừa bình luận.</p>
+                    <h3 class="film__title">Xemphimplus đã trở thành một cái tên không thể thiếu khi nhắc tới hai từ phim mới</h3>
+                    <p class="film__text">
+                        Những trang web xem phim bây giờ chủ yếu nhắm tới bắt tay với những ông chủ để quảng cáo sản phẩm trên website hoặc là bắt buộc người dùng đăng kí để xemphim. Và họ đã quá lạm dụng nên người dùng của họ rất ức chế. nhưng đối với XemPhimPlus thì không
+                        có. Chỉ việc vào tìm cho mình những bộ phimmoi để thưởng thức một cách trọn vẹn từ đầu đến cuối. Khi những trang web đang bị thanh lọc bởi nhà mạng vì lí do phim lậu nhưng XemPhimPlus vẫn còn y nguyên chứng tỏ chất lượng của chúng
+                        tôi đang rất là tốt.
+                    </p>
+                    <p class="film__text">
+                        Có thể nói năm nay là một bước tiến của<span class="introduct__name">XemPhimPlus</span>. Đây cũng là 1 trang web xem phim hàng đầu việt nam khi luôn có lượng người truy cập khổng lồ. Và luôn nằm trong danh sách đề cử những trang
+                        web xem phim mới chất lượng tốt nhất tại Việt Nam.
+                    </p>
+                </div>
+                <div class="introduce__btn" id="show-introduce">
+                    <span>...</span></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-2 m-2 s-6">
+                    <h6 class="footer__title">GalaPhim</h6>
+                    <ul class="footer__list">
+                        <li><a href="listFilm.html">Phim mới</a></li>
+                        <li><a href="listFilm.html">Phim lẻ mới</a></li>
+                        <li><a href="listFilm.html">Phim bộ mới</a></li>
+                        <li><a href="listFilm.html">Phim chiếu rạp</a></li>
+                        <li><a href="listFilm.html">Tin tức</a></li>
+                    </ul>
+                </div>
+                <div class="col l-3 m-3 s-6">
+                    <h6 class="footer__title">Phim Hay</h6>
+                    <ul class="footer__list">
+                        <li><a href="listFilm.html">Phim hay Việt Nam</a></li>
+                        <li><a href="listFilm.html">Phim hay Trung Quốc</a></li>
+                        <li><a href="listFilm.html">Phim hay Hàn Quốc</a></li>
+                        <li><a href="listFilm.html">Phim hay Ấn Độ</a></li>
+                        <li><a href="listFilm.html">Phim hay Thái Lan</a></li>
+                    </ul>
+                </div>
+                <div class="col l-2 m-2 s-4">
+                    <h6 class="footer__title">Phim Mới</h6>
+                    <ul class="footer__list">
+                        <li><a href="listFilm.html">Phim3s</a></li>
+                        <li><a href="listFilm.html">VTV16</a></li>
+                        <li><a href="listFilm.html">YeuPhimMoi</a></li>
+                        <li><a href="listFilm.html">KhoaiTV</a></li>
+                        <li><a href="listFilm.html">HDonline</a></li>
+                        <li><a href="listFilm.html">Motphim</a></li>
+                        <li><a href="listFilm.html">Kphim</a></li>
+                        <li><a href="listFilm.html">Bongngo</a></li>
+                    </ul>
+                </div>
+                <div class="col l-2 m-2 s-4">
+                    <h6 class="footer__title">Phim Online</h6>
+                    <ul class="footer__list">
+                        <li><a href="listFilm.html">BiluTV</a></li>
+                        <li><a href="listFilm.html">Vuviphim</a></li>
+                        <li><a href="listFilm.html">Vkool</a></li>
+                        <li><a href="listFilm.html">PhimNhanh</a></li>
+                        <li><a href="listFilm.html">Phim4400</a></li>
+                        <li><a href="listFilm.html">BanhTV</a></li>
+                        <li><a href="listFilm.html">TVhay</a></li>
+                        <li><a href="listFilm.html">DongPhim</a></li>
+                    </ul>
+                </div>
+                <div class="col l-3 m-2 s-4">
+                    <h6 class="footer__title">Contact</h6>
+                    <a class="footer-link" href="listFilm.html">Góp ý: info@galaphim.net</a>
+                    <ul class="footer__social">
+                        <li class="facebook"><a href="https://www.facebook.com/phuong.giang.92317121"><i class="fab fa-facebook-square"></i></a></li>
+                        <li class="instagram"><a href="listFilm.html"><i class="fab fa-instagram"></i></a></li>
+                        <li class="twitter"><a href="https://www.youtube.com/"><i class="fab fa-twitter"></i></a></li>
+                        <li class="vk"><a href="https://www.youtube.com/"><i class="fab fa-vk"></i></a></li>
+                    </ul>
+                    <div class="footer__app">
+                        <h6 class="footer__title">Download Our App</h6>
+                        <div class="row">
+                            <a class="col l-6 m-12" href="https://play.google.com/"><img class="app-connect__img" src="./assets/img/logo/google-play.png" att="Ảnh"></a>
+                            <a class="col l-6 m-12" href="https://www.apple.com"><img class="app-connect__img" src="./assets/img/logo/appstore.png" att="Ảnh"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s-12">
+                    <div class="copyright">
+                        <small>© 2021 <a href="listFilm.html"><strong>Xemphimplus</strong></a>. Copyright by <a href="https://www.facebook.com/phuong.giang.92317121">Phuong Giang</a></small>
+                        <ul class="copyright__list">
+                            <li><a href="https://www.facebook.com/phuong.giang.92317121"><strong>Góp ý</strong></a></li>
+                            <li><a href="https://www.facebook.com/phuong.giang.92317121"><strong>Chính sách</strong></a></li>
+                            <li><a href="https://www.facebook.com/phuong.giang.92317121"><strong>Điều khoản</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slider = document.getElementById("myRange");
+        var slider2 = document.getElementById("myRange2");
+        var output = document.getElementById("ratting");
+        var output2 = document.getElementById("year");
+        output.innerHTML = slider.value / 10;
+        output2.innerHTML = slider2.value;
+
+        slider.oninput = function() {
+            output.innerHTML = this.value / 10;
+        }
+        slider2.oninput = function() {
+            output2.innerHTML = this.value;
+        }
+        var Intro = document.getElementById("introduce");
+        var showIntro = document.getElementById("show-introduce");
+        showIntro.onclick = function() {
+            Intro.classList.toggle('change')
+        };
+    </script>
+</body>
+
+</html

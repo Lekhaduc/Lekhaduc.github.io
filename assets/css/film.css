@@ -1,0 +1,893 @@
+    /* Thanh điều hướng */
+    
+    .breadcrumb__list {
+        display: flex;
+        margin-top: 60px;
+    }
+    
+    .breadcrumb__item {
+        padding-right: 14px;
+    }
+    
+    .breadcrumb__item i,
+    .breadcrumb__link {
+        font-size: 1.5rem;
+        color: var(--text-cl-3);
+        font-weight: 300;
+    }
+    
+    .breadcrumb__link:hover {
+        color: var(--text-cl-df);
+        text-shadow: 0 0 5px var(--box-shadow-btn);
+        transition: all linear 0.3s;
+    }
+    /* Chi tiết phim */
+    
+    .move-info {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(0deg, var(--bg-cl-2), var(--bg-cl-2), var(--bg-cl-2), rgba(40, 40, 45, 0.7)), url(../img/background/B-Tu-Tien-Truyen-Chi-Luyen-Kiem.jpeg);
+        padding-bottom: 50px;
+    }
+    
+    .film-info {
+        background-color: rgba(14, 13, 13, 0.3);
+        box-shadow: 0 0 30px rgba(24, 20, 20, 0.6);
+    }
+    
+    .btn.dowload,
+    .btn.view {
+        position: absolute;
+        top: 85%;
+        width: 100px;
+        font-size: 1.1rem;
+        text-transform: none;
+        font-weight: 500;
+    }
+    
+    .btn.dowload {
+        right: 8px;
+    }
+    
+    .btn.view {
+        left: 8px;
+        background-color: var(--bd-cl-2);
+    }
+    
+    .film__heading {
+        font-size: 3.6rem;
+        color: var(--text-cl-1);
+        font-weight: 200;
+        text-shadow: 0 1px 4x var(--text-cl-1);
+    }
+    
+    .film-info__item {
+        font-size: 1.5rem;
+        line-height: 3.8rem;
+        border-top: 0.1px solid rgba(255, 85, 165, 0.1);
+        color: var(--text-cl-2);
+        padding-left: 8px;
+        font-weight: 200;
+    }
+    
+    .film-info__link~.film__imdb {
+        float: right;
+        line-height: 1.4rem;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    
+    .film-info__list .film-info__item:first-child {
+        border-top: none;
+    }
+    
+    .film-info__link {
+        color: var(--text-cl-df);
+        font-size: 1.5rem;
+        font-weight: 100;
+        cursor: pointer;
+    }
+    
+    li.film-info__item .fa-star {
+        color: gold;
+    }
+    
+    .group__star {
+        display: inline;
+        padding-left: 8px;
+    }
+    
+    .film-trailer {
+        width: 100%;
+        height: 260px;
+        margin-bottom: 8px;
+    }
+    
+    .share-text {
+        font-size: 2.4rem;
+        color: var(--text-cl-2);
+        font-weight: 100;
+    }
+    
+    #choose-episode i {
+        font-weight: 100;
+        font-size: 1.2rem;
+        padding-right: 6px;
+    }
+    
+    .fa-chevron-right.down::before {
+        content: "\f078";
+    }
+    /* Danh sách tập */
+    
+    .choose-list {
+        padding-top: 40px;
+        display: none;
+        animation: fadeIn linear 1.s;
+        position: relative;
+    }
+    
+    .choose-list.show {
+        display: block;
+    }
+    
+    .choose__title {
+        background-color: var(--bg-cl-1);
+        display: inline;
+        color: var(--text-cl-2);
+        font-size: 1.4rem;
+        padding: 12px 16px;
+        border-radius: 8px;
+        position: relative;
+    }
+    
+    .choose__title::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        right: -26px;
+        border-top: 40px solid transparent;
+        border-left: 26px solid var(--bg-cl-1);
+    }
+    
+    .choose__body {
+        background-color: var(--bg-cl-1);
+        padding: 20px 12px;
+        border-radius: 8px;
+    }
+    
+    .choose__body-title {
+        border: 0.5px solid var(--text-cl-2);
+        padding: 4px 24px;
+        color: var(--text-cl-2);
+        font-size: 1.6rem;
+        border-radius: 6px;
+        display: inline-block;
+        margin-bottom: 16px;
+        cursor: pointer;
+    }
+    
+    .choose__body-title:hover {
+        border: 0.5px solid var(--bd-cl-2);
+        transition: all 0.3s;
+        color: var(--text-cl-df);
+    }
+    
+    .choose__body-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .choose__body-list li {
+        margin: 10px 4px 10px 0;
+    }
+    
+    .choose__body-list li a {
+        color: var(--text-cl-2);
+        background-color: var(--btn-cl);
+        font-size: 1.6rem;
+        border-radius: 4px;
+        padding: 6px 32px;
+    }
+    
+    .choose__body-list li a:hover {
+        background-color: var(--btn-hover-cl);
+        transition: all linear 0.3s;
+        color: var(--text-cl-1);
+    }
+    /* Giới thiệu film */
+    
+    .film-detail {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    
+    .film-detail .film__heading {
+        padding-bottom: 16px;
+    }
+    
+    .film-detail__img {
+        padding: 10px 0;
+        display: flex;
+    }
+    
+    .film-detail__img img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .film__title {
+        font-size: 2rem;
+        color: var(--text-cl-2);
+        font-weight: 400;
+        line-height: 3.8rem;
+    }
+    
+    .film__text {
+        font-size: 1.6rem;
+        color: var(--text-cl-2);
+        font-weight: 100;
+        line-height: 2.8rem;
+        text-align: justify;
+    }
+    
+    .film-detail .film__link {
+        color: var(--text-cl-df);
+        font-weight: 400;
+    }
+    
+    .film-detail-btn {
+        border: 0.5px solid var(--text-cl-3);
+        padding: 3px 6px;
+        color: var(--text-cl-2);
+        font-size: 1.1rem;
+        border-radius: 3px;
+        display: inline-block;
+        margin-bottom: 16px;
+        cursor: pointer;
+        margin-right: 8px;
+        margin-top: 12px;
+        font-weight: 100;
+    }
+    
+    .film-detail-btn i {
+        margin-right: 4px;
+    }
+    
+    .film-detail-btn:hover {
+        border: 0.1px solid var(--bd-cl-2);
+        transition: all 0.3s;
+        color: var(--text-cl-df);
+    }
+    /* Phim liên quan */
+    
+    .film-relate {}
+    
+    .film-relate__title {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.5px solid var(--bd-cl-1);
+        margin-bottom: 8px;
+    }
+    
+    .film-relate__headding {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: var(--text-cl-df);
+        font-weight: 500;
+        border-bottom: 1px solid var(--bd-cl-2);
+    }
+    
+    .film-relate__title .tab {
+        display: flex;
+    }
+    
+    .film-relate .tab-item {
+        background-color: var(--btn-cl);
+        padding: 4px;
+        color: var(--text-cl-2);
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+    
+    .film-relate .tab-item.active {
+        background-color: var(--bd-cl-2);
+        position: relative;
+    }
+    
+    .film-relate .tab-item.active::after {
+        content: "";
+        border: solid;
+        border-color: var(--bd-cl-2) transparent;
+        border-width: 5px 6px 0 6px;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+    }
+    
+    .film-relate__title .tab .tab-item:first-child {
+        border-top-left-radius: 4px;
+    }
+    
+    .film-relate__title .tab .tab-item:last-child {
+        border-top-right-radius: 4px;
+    }
+    
+    .film-relate__item {
+        display: flex;
+        flex-direction: column;
+        height: 523px;
+        overflow-y: auto;
+        display: none;
+    }
+    
+    .film-relate__item.active {
+        display: block;
+    }
+    
+    .film-relate__wrap {
+        display: flex;
+        border-bottom: 0.1px solid var(--bd-cl-1);
+        background-color: var(--bg-cl-2);
+    }
+    
+    .film-relate__img {
+        padding-bottom: 40%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex: 3;
+        border-radius: 6px;
+        position: relative;
+    }
+    
+    .film-relate__img .film__play {
+        padding: 12px 12px 12px 14px;
+        border-width: 1px;
+    }
+    
+    .film-relate__img .film__play i {
+        font-size: 1.6rem;
+    }
+    
+    .film-relate__img:hover .film__play {
+        display: block;
+    }
+    
+    .film-relate__img:hover {
+        box-shadow: 0 0 10px var(--btn-hover-cl);
+    }
+    
+    .film-relate__content {
+        flex: 8;
+        padding-left: 6px;
+    }
+    
+    .film-relate__name {
+        font-size: 1.5rem;
+        color: var(--text-cl-1);
+        font-weight: 400;
+        text-shadow: 0 0 5px var(--text-shadown-1);
+    }
+    
+    .film-relate__name-origin {
+        font-size: 1.2rem;
+        color: var(--text-cl-3);
+    }
+    
+    .film-relate__view {
+        font-size: 1.2rem;
+        color: var(--text-cl-df);
+    }
+    
+    .film-relate__name,
+    .film-relate__name-origin,
+    .film-relate__view {
+        margin-top: 8px;
+        line-height: 1.8rem;
+        height: 18px;
+        overflow: hidden;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+    /* Bình luận đánh giá*/
+    
+    .film-rate {
+        padding-bottom: 40px;
+    }
+    
+    .rate-title {
+        border-top: 2px solid var(--bd-cl-2);
+        box-shadow: 0 3px 20px var(--box-shadow-cl-1);
+        padding-top: 16px;
+    }
+    
+    .tab-rate {
+        background-color: var(--bg-cl-1);
+        padding: 20px;
+    }
+    
+    .tab-rate__input {
+        background-color: var(--bg-cl-2);
+        color: var(--text-cl-2);
+        border: none;
+        outline: none;
+        font-size: 1.6rem;
+        width: 100%;
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+    
+    .range__rate {
+        -webkit-appearance: none;
+        width: 150px;
+        height: 5px;
+        background: var(--btn-cl);
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        border-radius: 3px;
+        margin-bottom: 16px;
+        margin-right: 6px;
+    }
+    
+    .range__rate:hover {
+        opacity: 1;
+    }
+    
+    .range__rate::-webkit-rang.range__rate-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: var(--btn-cl) !important;
+        cursor: pointer;
+    }
+    
+    .range__rate::-moz-range-thumb {
+        width: 5px;
+        height: 5px;
+        background: var(--text-cl-df);
+        cursor: pointer;
+    }
+    
+    .range-rate__number {
+        color: var(--text-cl-1);
+        font-size: 1.4rem;
+    }
+    
+    .tab-rate .btn {
+        display: block;
+        width: 120px;
+    }
+    /* Comment */
+    
+    .tab-comment {
+        margin: 40px 0;
+    }
+    
+    .sort-text {
+        font-size: 1.2rem;
+        color: var(--text-cl-3);
+        font-weight: 200;
+        margin-bottom: 12px;
+    }
+    
+    .sort--headding {
+        font-size: 1.4rem;
+        color: var(--text-cl-1);
+        display: inline;
+    }
+    
+    .tab-comment-sort {
+        display: flex;
+        position: relative;
+        justify-self: center;
+    }
+    
+    .sort-list {
+        background-color: var(--bg-cl-1);
+        border-top: 2px solid var(--bd-cl-2);
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+        box-shadow: 0 0 15px varr(--box-shadow-cl-1);
+        max-width: 200px;
+        overflow-y: auto;
+        transform-origin: top;
+        will-change: opacity, tranform;
+        animation: fadeInScale linear 0.3s;
+        z-index: 3;
+        display: none;
+    }
+    
+    .sort-item {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: var(--text-cl-2);
+        padding: 12px;
+        cursor: pointer;
+    }
+    
+    .sort-item:hover {
+        color: var(--text-cl-df);
+        transition: all 0.3s;
+    }
+    
+    #open-tabsort:checked~.sort-list,
+    #open-tabsort:checked~.overlay {
+        display: block;
+    }
+    
+    #open-tabsort:checked~.open-icon::before {
+        -webkit-transform: rotate(-45deg) translate(-4px, 4.5px);
+        transform: rotate(-45deg) translate(-0.5px, 0.5px);
+    }
+    
+    #open-tabsort:checked~.open-icon::after {
+        -webkit-transform: rotate(45deg) translate(-4px, -4.5px);
+        transform: rotate(45deg) translate(-4px, -3.5px);
+        width: 16px;
+    }
+    
+    .tab-comment__item {
+        margin-top: 20px;
+        margin-bottom: 12px;
+    }
+    
+    .comment-head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    
+    .tab-comment__img {
+        border-radius: 50%;
+        width: 40px;
+        margin-right: 24px;
+    }
+    
+    .tab-comment__name {
+        font-size: 1.6rem;
+        color: var(--text-cl-1);
+        margin-bottom: 6px;
+    }
+    
+    .tab-comment__time {
+        font-size: 1.3rem;
+        font-weight: 200;
+        color: var(--text-cl-2);
+    }
+    
+    .comment-body {
+        background-color: var(--bg-cl-1);
+    }
+    
+    .comment-body__text {
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: var(--text-cl-2);
+        padding: 20px;
+        line-height: 1.8rem;
+    }
+    
+    .comment-body__control {
+        display: flex;
+        justify-content: space-between;
+        color: var(--text-cl-3);
+        font-size: 1.2rem;
+        font-weight: 100;
+        align-items: center;
+        padding: 20px;
+        border-top: 0.1px solid var(--bd-cl-1);
+    }
+    
+    .comment-body__control i {
+        margin-right: 6px;
+    }
+    
+    .comment-body__control i:hover {
+        opacity: 0.8;
+        transition: all linear 0.3s;
+    }
+    
+    .comment-body__control span {
+        padding: 0 10px;
+    }
+    
+    .control-like span:first-child {
+        padding-left: 0;
+        color: #0cb457;
+    }
+    
+    .control-like span:last-child {
+        color: #c22b3c;
+    }
+    
+    .control-like span:first-child {
+        border-right: 1px solid var(--bd-cl-1);
+    }
+    
+    .control-reply {
+        text-transform: uppercase;
+    }
+    
+    .control-reply span:first-child {
+        padding-right: 0;
+    }
+    
+    .tab-comment__review {
+        font-size: 1.5rem;
+        color: var(--text-cl-1);
+    }
+    
+    .tab-comment__review i {
+        color: var(--text-cl-df);
+        font-size: 1.4rem;
+        text-shadow: 0 0 10px var(--box-shadow-cl-2);
+        padding-right: 4px;
+    }
+    
+    .mr-auto {
+        margin-right: auto;
+    }
+    /* -------Xem Phim------ */
+    
+    .video-wrap {
+        display: flex;
+        padding: 0 120px 60px;
+        background: #000;
+    }
+    
+    .video-film {
+        margin: auto;
+        background-image: url(../img/background/B-dai-thoai-tay-du.jpg);
+    }
+    
+    .group-btn_video {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4px;
+    }
+    
+    .group-btn_video ul {
+        display: flex;
+    }
+    
+    .video-btn {
+        font-size: 1.2rem;
+        color: var(--text-cl-2);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px 8px;
+        border-radius: 4px;
+        margin: 0 1px;
+        cursor: pointer;
+    }
+    
+    .video-btn.active {
+        color: gold;
+    }
+    
+    .video-sever {
+        display: flex;
+        font-size: 1.4rem;
+        margin-top: 26px;
+        color: var(--text-cl-2);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .video-sever ul {
+        display: flex;
+        margin-left: 8px;
+    }
+    
+    .video-sever>i {
+        margin-right: 4px;
+    }
+    
+    .video-sever-btn {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px 8px;
+        border-radius: 4px;
+        margin: 0 1px;
+        cursor: pointer;
+    }
+    
+    .video-sever-btn.active {
+        background-color: gold;
+        color: #000;
+    }
+    
+    .video-sever__notify {
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+        font-weight: 300;
+        color: var(--text-cl-1);
+        margin-top: 12px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .video-sever__notify span {
+        background-color: var(--bd-cl-2);
+        padding: 4px 8px;
+    }
+    
+    .video-info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+    }
+    
+    .video-film-name i {
+        font-size: 1.6rem;
+        color: var(--text-cl-1);
+        color: red;
+        padding-right: 6px;
+    }
+    
+    .video-film-name a {
+        font-size: 1.8rem;
+        color: var(--text-cl-1);
+        font-weight: 500;
+    }
+    
+    .video-name-origin {
+        font-size: 1.4rem;
+        color: var(--text-cl-2);
+        font-weight: 300;
+        margin: 12px 0;
+    }
+    
+    .review-video {
+        font-size: 1.6rem;
+        color: var(--text-cl-1);
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .review-video span i,
+    .review-video .group__star i {
+        color: gold;
+    }
+    
+    .review-video span {
+        margin-top: 4px;
+        font-style: italic;
+    }
+    
+    .film-detail .breadcrumb__list {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+    
+    .fb-comments {
+        background-color: #fff;
+        margin-top: 16px;
+    }
+    
+    @media (max-width:1200px) {
+        .move-info .grid .row>.l-5,
+        .move-info .grid .row>.l-7 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .film-info .row>.l-4 {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+        .film-info .row>.l-8 {
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+        .row.gt-l {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+        .row.gt-l>.col {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .film-trailer {
+            height: 450px;
+        }
+        .video-wrap {
+            padding: 0 100px 50px;
+        }
+    }
+    
+    @media(max-width:768px) {
+        .film-info .row>.l-4 {
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+        .film-info .row>.l-8 {
+            flex: 0 0 60%;
+            max-width: 60%;
+        }
+        .video-wrap {
+            padding: 0;
+        }
+        .film-trailer {
+            height: 350px;
+        }
+    }
+    
+    @media (max-width:480px) {
+        .film-info .row>.l-4 {
+            flex: 0 0 80%;
+            max-width: 80%;
+            margin: auto;
+        }
+        .film-info .row>.l-8 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .breadcrumb__list {
+            margin-top: 30px;
+        }
+        .film-trailer {
+            height: 190px;
+        }
+        .fb-like {
+            overflow: hidden;
+        }
+        .row.gt-l,
+        .row.gt-s {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+        .row.gt-l>.col,
+        .row.gt-s>.col {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        .film-info {
+            background: none;
+            box-shadow: none;
+        }
+        .btn.dowload,
+        .btn.view {
+            font-size: 1.6rem;
+            width: 130px;
+        }
+        .hide-s {
+            display: none;
+        }
+        .video-info {
+            display: block;
+        }
+    }
+    
+    @media (max-width:340px) {
+        .btn.dowload,
+        .btn.view {
+            font-size: 1.2rem;
+            width: 110px;
+        }
+        .breadcrumb__list {
+            display: inline-block;
+        }
+        .breadcrumb__item {
+            display: inline-block;
+            line-height: 2rem;
+        }
+        .film__heading {
+            font-size: 2.8rem;
+        }
+        .film-trailer {
+            height: 170px;
+        }
+    }

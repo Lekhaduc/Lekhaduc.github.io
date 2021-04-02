@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ Phim Online</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/library.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="header__logo">
+            <img src="https://galaphim.net/images/logo/logo.webp" alt="">
+        </a>
+        <input type="checkbox" id="open-navbar" hidden>
+        <label for="open-navbar" class="overlay bg-black"></label>
+        <ul class="header__nav">
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Phim mới</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Phim lẻ</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Phim bộ</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Phim chiếu rạp</a>
+            </li>
+            <li class="header__nav-item">
+                <label for="open-category" class="header__nav-link">Thể loại</label>
+                <input type="checkbox" id="open-category" hidden>
+                <label for="open-category" class="overlay"></label>
+                <ul class="subnav__list">
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Hành động</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Chiến Tranh</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Kịch Tính</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Anime</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Lãng Mạn</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Đam Mỹ</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Kiếm Hiệp</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tiên Hiệp</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Võ Thuật</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">TV Show</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tài Liệu</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Cổ Trang</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Thần Thoại</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tình Cảm</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Ngôn Tình</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tâm Lý</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Hoạt Hình</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Thể Thao</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Khoa Học</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tội Phạm Học</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Âm Nhạc</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__nav-item">
+                <label for="open-nation" class="header__nav-link">Quốc gia</label>
+                <input type="checkbox" id="open-nation" hidden>
+                <label for="open-nation" class="overlay"></label>
+                <ul class="subnav__list">
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Trung Quốc</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Ấn Độ</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Nhật Bản</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Mỹ</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Thái Lan</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Hồng Kông</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Pháp</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Anh</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Đức</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Tây Ban Nha</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Việt Nam</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Đài Loan</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Âu Mỹ</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Indonesia</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Na uy</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Turkey</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Italy</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="listFilm.html" class="subnav__link">Poland</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__nav-item">
+                <a href="listFilm.html" class="header__nav-link">Sắp chiếu</a>
+            </li>
+        </ul>
+        <div class="header__control">
+            <label for="open-search" class="control-search">
+                    <i class="fas fa-search"></i>
+                    <input type="checkbox" id="open-search" hidden>
+                    <label for="open-search" class="overlay"></label>
+            <div class="header__search">
+                <div class="header__search-wrap">
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm theo tên, diễn viên, đạo diễn, thể loại,...">
+                    <a href="listFilm.html" class="btn btn-pink size-s">Tìm kiếm</a>
+                </div>
+            </div>
+            </label>
+            <label for="show__notify-body" class="control-notify have">
+                    <i class="fas fa-bell"></i>
+                    <span class="notify__amount">3</span>
+            </label>
+            <label class="control-login">
+                <a href="login.html" class="btn btn-pink size-l">Đăng nhập</a>
+                <a href="login.html" class="login-icon"><i class="fas fa-sign-in-alt"></i></a>
+            </label>
+        </div>
+        <label for="open-navbar" class="navbar-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+    <div class="main">
+        <div class="banner" style="background-image: linear-gradient(0, rgba(29, 31, 48, 0.4), rgba(53, 54, 64, 0.5)), url(assets/img/background/B-Tu-Tien-Truyen-Chi-Luyen-Kiem.jpeg);">
+            <div class="grid wide">
+                <div class="banner__title">
+                    <h3 class="banner__heading">Phim đề cử</h3>
+                    <div class="banner__move">
+                        <a href="#" class="move__icon fas fa-arrow-left"></a>
+                        <a href="#" class="move__icon fas fa-arrow-right"></a>
+                    </div>
+                </div>
+                <div class="row gt-l">
+                    <div class="col l-2-4 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image:url(assets/img/film/Doi-song-nguc-tu.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">92 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Đời Sống Ngục Tù</a>
+                                <p class="film__name-origin">Prison Playbook</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image:url(assets/img/film/ban-trai-toi-la-ho-ly.png);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">16/16 Tập</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Bạn Trai Tôi Là Hồ Ly</a>
+                                <p class="film__name-origin">Ban trai toi la ho ly</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 s-0">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image:url(assets/img/film/che-phuc.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">92 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Chế Phục</a>
+                                <p class="film__name-origin">A Chilling Cosplay</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-0 s-0">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image:url(assets/img/film/Dai-thoai-tay-du.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">88 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Đại Thoại Tây Du</a>
+                                <p class="film__name-origin">A Chinese Odyssey: Part One - Pandora's Box</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-0 s-0">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image:url(assets/img/film/Doc-than-dua-vao-thuc-luc.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">24/24 Tập</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Tôi Độc Thân Dựa Vào Thực Lực</a>
+                                <p class="film__name-origin">Professional Singley</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Phim Nổi bật -->
+        <div class="main___highlight">
+            <div class="highlight__title bg-1">
+                <div class="grid wide">
+                    <div class="tab__main">
+                        <h3 class="tab__main-title">Nổi Bật</h3>
+                    </div>
+                    <input type="checkbox" id="open-tablist" hidden>
+                    <label for="open-tablist" class="overlay"></label>
+                    <label for="open-tablist" class="open-icon"></label>
+                    <div class="tab__list">
+                        <label for="open-tablist" class="tab__item active">Phim mới nhất</label>
+                        <label for="open-tablist" class="tab__item">Phim lẻ</label>
+                        <label for="open-tablist" class="tab__item">Phim bộ</label>
+                        <label for="open-tablist" class="tab__item">Phim chiếu rạp</label>
+                        <label for="open-tablist" class="tab__line"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="grid wide">
+                <div class="tab__content">
+                    <!-- Phim mới nhất -->
+                    <div class="tab__page active">
+                        <div class="row gt-s">
+                            <div class="col l-6 m-12 s-6">
+                                <div class="film__item detail">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/cuong-dao.jpg);">
+                                        <span class="film__resolution">FullHD</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">92 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Cuồng Đao</a>
+                                        <p class="film__name-origin">A Chilling Cosplay</p>
+                                        <a href="listFilm.html" class="film__category">Hành Động, Võ Thuật, Cổ Trang</a>
+                                        <a href="listFilm.html" class="film__nation">Phim Trung Quốc</a>
+                                        <p class="film__imdb">IMDb 7.5</p>
+                                        <p class="film__description">Cuồng Đao - Soul of Blades nội dung nói về một thanh kim đao do gia tộc đúc kiếm Nam Cung đúc ra bị kiếm khách "Tần Nhất Đao" cướp mất, kim đao có sức mê hoặc cực lớn, trên giang hồ bắt đầu treo thưởng bắt hắn.
+                                            Trong một lần trốn truy sát, Tần Nhất Đao nhặt được một cậu bé tên A Cẩu và dẫn cậu đến vùng đất hỗn loạn "Tam Bất Quản". Sau khi A Cẩu trưởng thành, tiểu thư gia tộc Nam Cung biết được vị trí của kẻ thù, dùng
+                                            khổ nhục kế tiếp cập A Cẩu, ý đồ lợi dụng A Cẩu giết chết Tần Nhất Đao, mà lúc này A Cẩu đã biết được bí mật của kim đao...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-12 s-6">
+                                <div class="film__item detail">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/B-be-ha-ben-trai-sep-ben-phai.jpg);">
+                                        <span class="film__resolution">FullHD</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">18 Tập</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Bệ Hạ Bên Trái, Sếp Bên Phải</a>
+                                        <p class="film__name-origin">Emperor or Boss</p>
+                                        <a href="listFilm.html" class="film__category">Lịch Sử, Tình Cảm</a>
+                                        <a href="listFilm.html" class="film__nation">Phim Trung Quốc</a>
+                                        <p class="film__imdb">IMDb 7.2</p>
+                                        <p class="film__description">Bệ Hạ Bên Trái, Sếp Bên Phải là bộ phim Tình Cảm kể về một nữ anh hùng Fubao yêu ông chủ của mình. và dựa vào ghi chú để hiện thực hóa mong muốn đánh gục sếp của mình. Đột nhiên, một vị hoàng tử cổ đại tự nhận là
+                                            chủ nhân của tờ giấy điều ước từ trên trời rơi xuống, để lấy lại tờ giấy bạc đó, anh ta còn tung ra một cuộc tấn công truy đuổi Fubao, kể từ đó, Fubao là câu chuyện về chàng thú cưng thành thị. không ngừng luân
+                                            chuyển và lắc lư giữa hai nam thần.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-12 s-6">
+                                <div class="film__item detail">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/mo-vuong-chi-vuong.jpg);">
+                                        <span class="film__resolution">FullHD</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">40 Tập</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Mộ Vương Chi Vương</a>
+                                        <p class="film__name-origin">Great King of the Grave</p>
+                                        <a href="listFilm.html" class="film__category">Hài Hước, Lịch Sử, Tình Cảm</a>
+                                        <a href="listFilm.html" class="film__nation">Phim Trung Quốc</a>
+                                        <p class="film__imdb">IMDb 7.5</p>
+                                        <p class="film__description">Mộ Vương Chi Vương Luo Wu Zi giúp Li Si Xiu đắp ụ Tần Thủy Hoàng; vị hoàng đế đầu tiên thống nhất Trung Quốc. Các đệ tử của ông tiếp tục xây dựng và bảo vệ bia mộ hoàng gia. Ở giữa là sự xuất hiện của Cửu vĩ mộ,
+                                            còn được gọi là Đại vương mộ. Trong hàng ngàn năm, các ngôi mộ không bao giờ bị cướp. Những người bên ngoài coi những người bảo vệ lăng mộ này giống như Tomb Sect. Sau cái chết của Luo Wu Zi, vị trí Grave King
+                                            được chuyển giao cho đệ tử lớn nhất của ông, Mu Rong Xi</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-12 s-6">
+                                <div class="film__item detail">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/tu-tien-truyen-chi-luyen-kiem.jpg);">
+                                        <span class="film__resolution">FullHD</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">85 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Tu Tiên Truyện Chi Luyện Kiếm</a>
+                                        <p class="film__name-origin">Blade of Flame</p>
+                                        <a href="listFilm.html" class="film__category">Hành Động, Viễn Tưởng, Võ Thuật, Cổ Trang</a>
+                                        <a href="listFilm.html" class="film__nation">Phim Trung Quốc</a>
+                                        <p class="film__imdb">IMDb 6.4</p>
+                                        <p class="film__description">Tu Tiên Truyện Chi Luyện Kiếm - Blade of Flame là câu chuyện về nhân vật Thiết Kiên. Một thanh niên bình thường sống dưới chân Thiên Kiếp Lộ. Chàng khát khao tu tiên nhưng sinh ra không có Kiếm Hồn nên không thể
+                                            tu luyện. Nhờ cơ duyên xảo hợp, Thiết Kiên rút được thanh Phẫn Tâm Kiếm do Kiếm Thánh để lại, và một cổ lực lượng “dị hỏa” thần bí đã thâm nhập vào cơ thể chàng.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-12 s-6">
+                                <div class="film__item detail">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/doi-mat-am-duong.jpg);">
+                                        <span class="film__resolution">FullHD</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">100 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Đôi Mắt Âm Dương</a>
+                                        <p class="film__name-origin">Doi Mat Am Duong</p>
+                                        <a href="listFilm.html" class="film__category">Kinh Dị</a>
+                                        <a href="listFilm.html" class="film__nation">Phim Việt Nam</a>
+                                        <p class="film__imdb">IMDb 7.8</p>
+                                        <p class="film__description">Đôi Mắt Âm Dương là phim kinh dị hài hước, có hai diễn viên truyền hình hot nhất của Về Nhà Đi Con là Bảo Thanh và Quốc Trường. Bộ phim xoay quanh họa sĩ Trang (Thu Trang) - một người bị mất trí nhớ tạm thời sau
+                                            tai nạn xe hơi. Kể từ khi bình phục và trở về nhà, cô luôn thấy hình bóng ai đó nhẹ nhàng đi theo cô mọi lúc mọi nơi, bất kể ngày đêm với đôi mắt đầy máu. Dần dần đào sâu mọi chuyện cũng như được người chồng
+                                            (Quốc Trường) khơi gợi lại ký ức cũ nên Trang đã nhớ ra mọi chuyện, và sự thật không hề đơn giản như một vụ tai nạn giao thông</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-12 s-6">
+                                <div class="film__item detail">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/dai-chien-thai-binh-duong.jpg);">
+                                        <span class="film__resolution">FullHD</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">131 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Đại Chiến Thái Bình Dương</a>
+                                        <p class="film__name-origin">Pacific Rim</p>
+                                        <a href="listFilm.html" class="film__category">Hành Động, Phiêu Lưu, Viễn Tưởng</a>
+                                        <a href="listFilm.html" class="film__nation">Phim Mỹ</a>
+                                        <p class="film__imdb">IMDb 7.5</p>
+                                        <p class="film__description">Phim Đại Chiến Thái Bình Dương - Pacific Rim 2013 lấy bối cảnh Trái Đất ở tương lai, khi các quái vật biển khổng lồ có tên gọi Kaiju tấn công và đe dọa diệt vong nhân loại. Loài người nghĩ ra một loại vũ khí đặc
+                                            biệt có tên Jaeger - những robot khổng lồ được điều khiển bởi thần kinh của con người, nhằm chống lại những quái vật Kaiju từ vành đai Pacific Rim.Xem phim online này bạn sẽ thấy Jaeger có tên Gypsy được Raleigh
+                                            cùng anh trai Yanci điều khiển đã tiêu diệt được rất nhiều Kaiju. Tuy nhiên, một lần đụng độ với con Kaiju quá hung hãn, người anh trai Yanci đã vĩnh viễn ra đi. Sau trận chiến ấy, Raleigh lang bạt khắp nơi
+                                            trên Trái Đất, trở thành một công nhân. Tới một ngày, Tổng tư lệnh Stacker đề nghị anh và các chiến binh tinh nhuệ nhất làm một cuộc tấn công vào rãnh nứt Pacific Rim dưới đáy biển - sào huyệt của các Kaiju.Nhưng
+                                            nếu muốn tiếp tục chiến đấu và thắng được trận đánh cuối cùng trong phim Siêu Đại Chiến, Raleigh phải tìm được người thay thế anh trai cùng điều khiển Jaeger với mình. Người có thể kết nối tâm linh với anh sẽ
+                                            là ai? Và liệu cuộc chiến Pacific Rim có thể kết thúc khi lũ Kaiju càng lúc càng mạnh? Kính mời các bạn cùng theo dõi phim hd này nhé! MPAA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Phim lẻ -->
+                    <div class="tab__page">
+                        <div class="row gt-s">
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/be-ha-ben-trai-sep-ben-phai.jpg);">
+                                    <span class="film__resolution">FullHD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">18 Tập</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Bệ Hạ Bên Trái, Sếp Bên Phải</a>
+                                    <p class="film__name-origin">Emperor or Boss</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__item">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/nguoi-me-that-su.jpg);">
+                                        <span class="film__resolution">HD-VietSub</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">92 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Người Mẹ Thực Sự</a>
+                                        <p class="film__name-origin">The Wrong Mother</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__item">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/ngoai-gia-lam-chieu.jpg);">
+                                        <span class="film__resolution">HD-VietSub</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">88 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Ngoại Già Lắm Chiêu</a>
+                                        <p class="film__name-origin">Grannys Got Talent</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/ong-ban-gang-to.jpg);">
+                                    <span class="film__resolution">HDRip</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">116 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Ông Bạn Găng Tơ</a>
+                                    <p class="film__name-origin">Man Of Men / Peopekteu maen</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/phap-su-mu.jpg);">
+                                    <span class="film__resolution">FullHD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">120 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Pháp Sư Mù: Ai Chết Giơ Tay</a>
+                                    <p class="film__name-origin">Blind Mage: Who's Died Raise Your Hand?</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/quy-ong-cua-toi.jpg);">
+                                    <span class="film__resolution">HD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">120 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Quý Ông Của Tôi</a>
+                                    <p class="film__name-origin">My Mister</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/sac-dep-doi-tra.jpg);">
+                                    <span class="film__resolution">FullHD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">24/24 Tập</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Sắc Đẹp Dối Trá</a>
+                                    <p class="film__name-origin">Sac dep doi tra</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__item">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/che-phuc.jpg);">
+                                        <span class="film__resolution">FullHD</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">92 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Chế Phục</a>
+                                        <p class="film__name-origin">A Chilling Cosplay</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__item">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/Doi-song-nguc-tu.jpg);">
+                                        <span class="film__resolution">FullHD</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">16 Tập</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Đời sống ngục tù</a>
+                                        <p class="film__name-origin">Prison Playbook</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/doi-mat-am-duong.jpg);">
+                                    <span class="film__resolution">HD - VietSub</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">16/20 Tập</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Đôi mắt âm dương</a>
+                                    <p class="film__name-origin">Doi Mat Am Duong</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/Dai-thoai-tay-du.jpg);">
+                                    <span class="film__resolution">FullHD - Thuyết Minh</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">88 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Đại thoại tây du</a>
+                                    <p class="film__name-origin">A Chinese Odyssey: Part One - Pandora's Box</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/dien-vi-em.jpg);">
+                                    <span class="film__resolution">FullHD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">24/24 Tập</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Điên Vì Em</a>
+                                    <p class="film__name-origin">Professional Single</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Phim bộ -->
+                    <div class="tab__page">
+                        <div class="row gt-s">
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__item">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/nguoi-me-that-su.jpg);">
+                                        <span class="film__resolution">HD-VietSub</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">92 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Người Mẹ Thực Sự</a>
+                                        <p class="film__name-origin">The Wrong Mother</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__item">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/ngoai-gia-lam-chieu.jpg);">
+                                        <span class="film__resolution">HD-VietSub</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">88 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Ngoại Già Lắm Chiêu</a>
+                                        <p class="film__name-origin">Grannys Got Talent</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/ong-ban-gang-to.jpg);">
+                                    <span class="film__resolution">HDRip</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">116 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Ông Bạn Găng Tơ</a>
+                                    <p class="film__name-origin">Man Of Men / Peopekteu maen</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/phap-su-mu.jpg);">
+                                    <span class="film__resolution">FullHD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">120 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Pháp Sư Mù: Ai Chết Giơ Tay</a>
+                                    <p class="film__name-origin">Blind Mage: Who's Died Raise Your Hand?</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/quy-ong-cua-toi.jpg);">
+                                    <span class="film__resolution">HD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">120 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Quý Ông Của Tôi</a>
+                                    <p class="film__name-origin">My Mister</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/sac-dep-doi-tra.jpg);">
+                                    <span class="film__resolution">FullHD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">24/24 Tập</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Sắc Đẹp Dối Trá</a>
+                                    <p class="film__name-origin">Sac dep doi tra</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__item">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/che-phuc.jpg);">
+                                        <span class="film__resolution">FullHD</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">92 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Chế Phục</a>
+                                        <p class="film__name-origin">A Chilling Cosplay</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__item">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/Doi-song-nguc-tu.jpg);">
+                                        <span class="film__resolution">FullHD</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">16 Tập</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Đời sống ngục tù</a>
+                                        <p class="film__name-origin">Prison Playbook</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/doi-mat-am-duong.jpg);">
+                                    <span class="film__resolution">HD - VietSub</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">16/20 Tập</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Đôi mắt âm dương</a>
+                                    <p class="film__name-origin">Doi Mat Am Duong</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/Dai-thoai-tay-du.jpg);">
+                                    <span class="film__resolution">FullHD - Thuyết Minh</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">88 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Đại thoại tây du</a>
+                                    <p class="film__name-origin">A Chinese Odyssey: Part One - Pandora's Box</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/dien-vi-em.jpg);">
+                                    <span class="film__resolution">FullHD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">24/24 Tập</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Điên Vì Em</a>
+                                    <p class="film__name-origin">Professional Single</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/Doc-than-dua-vao-thuc-luc.jpg);">
+                                    <span class="film__resolution">FullHD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">24/24 Tập</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Tôi Độc Thân Dựa Vào Thực Lực</a>
+                                    <p class="film__name-origin">Professional Single</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Phim chiếu rạp -->
+                    <div class="tab__page">
+                        <div class="row gt-s">
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__item">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/tu-tien-truyen-chi-luyen-kiem.jpg);">
+                                        <span class="film__resolution">FullHD</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">85 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Tu Tiên Truyện Chi Luyện Kiếm</a>
+                                        <p class="film__name-origin">Blade of Flame</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/cuong-dao.jpg);">
+                                    <span class="film__resolution">HD - VietSub</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">90 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Cuồng Đao</a>
+                                    <p class="film__name-origin">Soul of BladesDoi Mat Am Duong</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/dai-chien-thai-binh-duong.jpg);">
+                                    <span class="film__resolution">FullHD - Thuyết Minh</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">7/7 Tập</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Đại Chiến Thái Bình Dương: Vùng Tối</a>
+                                    <p class="film__name-origin">Pacific Rim: The Black</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/mo-vuong-chi-vuong.jpg);">
+                                    <span class="film__resolution">FullHD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">40 Tập</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Mộ Vương Chi Vương</a>
+                                    <p class="film__name-origin">Great King of the Grave</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/be-ha-ben-trai-sep-ben-phai.jpg);">
+                                    <span class="film__resolution">FullHD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">18 Tập</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Bệ Hạ Bên Trái, Sếp Bên Phải</a>
+                                    <p class="film__name-origin">Emperor or Boss</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__item">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/nguoi-me-that-su.jpg);">
+                                        <span class="film__resolution">HD-VietSub</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">92 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Người Mẹ Thực Sự</a>
+                                        <p class="film__name-origin">The Wrong Mother</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__item">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/ngoai-gia-lam-chieu.jpg);">
+                                        <span class="film__resolution">HD-VietSub</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">88 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Ngoại Già Lắm Chiêu</a>
+                                        <p class="film__name-origin">Grannys Got Talent</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/ong-ban-gang-to.jpg);">
+                                    <span class="film__resolution">HDRip</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">116 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Ông Bạn Găng Tơ</a>
+                                    <p class="film__name-origin">Man Of Men / Peopekteu maen</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/phap-su-mu.jpg);">
+                                    <span class="film__resolution">FullHD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">120 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Pháp Sư Mù: Ai Chết Giơ Tay</a>
+                                    <p class="film__name-origin">Blind Mage: Who's Died Raise Your Hand?</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/quy-ong-cua-toi.jpg);">
+                                    <span class="film__resolution">HD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">120 Phút</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Quý Ông Của Tôi</a>
+                                    <p class="film__name-origin">My Mister</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__cover" style="background-image: url(assets/img/film/sac-dep-doi-tra.jpg);">
+                                    <span class="film__resolution">FullHD</span>
+                                    <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                    <span class="film__runtime">24/24 Tập</span>
+                                </div>
+                                <div class="film__content">
+                                    <a href="film.html" class="film__name">Sắc Đẹp Dối Trá</a>
+                                    <p class="film__name-origin">Sac dep doi tra</p>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 s-6">
+                                <div class="film__item">
+                                    <div class="film__cover" style="background-image: url(assets/img/film/che-phuc.jpg);">
+                                        <span class="film__resolution">FullHD</span>
+                                        <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                        <span class="film__runtime">92 Phút</span>
+                                    </div>
+                                    <div class="film__content">
+                                        <a href="film.html" class="film__name">Chế Phục</a>
+                                        <p class="film__name-origin">A Chilling Cosplay</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__carousel bg-1">
+            <div class="grid wide">
+                <div class="tab__main">
+                    <h3 class="tab__main-title">Phim Bộ Hàn Quốc</h3>
+                    <a href="#" class="tab__main-icon fas fa-arrow-right"></a>
+                </div>
+                <div class="row gt-s" style="position: relative;">
+                    <a href="#" class="main__move-left"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class="main__move-right"><i class="fas fa-chevron-right"></i></a>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/nguoi-me-that-su.jpg);">
+                                <span class="film__resolution">HD-VietSub</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">92 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Người Mẹ Thực Sự</a>
+                                <p class="film__name-origin">The Wrong Mother</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/ngoai-gia-lam-chieu.jpg);">
+                                <span class="film__resolution">HD-VietSub</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">88 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Ngoại Già Lắm Chiêu</a>
+                                <p class="film__name-origin">Grannys Got Talent</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/ong-ban-gang-to.jpg);">
+                            <span class="film__resolution">HDRip</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">116 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Ông Bạn Găng Tơ</a>
+                            <p class="film__name-origin">Man Of Men / Peopekteu maen</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/phap-su-mu.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">120 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Pháp Sư Mù: Ai Chết Giơ Tay</a>
+                            <p class="film__name-origin">Blind Mage: Who's Died Raise Your Hand?</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/quy-ong-cua-toi.jpg);">
+                            <span class="film__resolution">HD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">120 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Quý Ông Của Tôi</a>
+                            <p class="film__name-origin">My Mister</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/sac-dep-doi-tra.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">24/24 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Sắc Đẹp Dối Trá</a>
+                            <p class="film__name-origin">Sac dep doi tra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__carousel bg-2">
+            <div class="grid wide">
+                <div class="tab__main">
+                    <h3 class="tab__main-title">Phim Bộ Hoa Ngữ</h3>
+                    <a href="#" class="tab__main-icon fas fa-arrow-right"></a>
+                </div>
+                <div class="row gt-s" style="position: relative;">
+                    <a href="#" class="main__move-left"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class="main__move-right"><i class="fas fa-chevron-right"></i></a>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/su-gia-dia-nguc.jpg);">
+                                <span class="film__resolution">HD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">104 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Sứ Giả Đia Ngục</a>
+                                <p class="film__name-origin">Drive Angry</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/tu-tien-truyen-chi-luyen-kiem.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">85 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Tu Tiên Truyện Chi Luyện Kiếm</a>
+                                <p class="film__name-origin">Blade of Flame</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/cuong-dao.jpg);">
+                            <span class="film__resolution">HD - VietSub</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">90 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Cuồng Đao</a>
+                            <p class="film__name-origin">Soul of BladesDoi Mat Am Duong</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/dai-chien-thai-binh-duong.jpg);">
+                            <span class="film__resolution">FullHD - Thuyết Minh</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">7/7 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Đại Chiến Thái Bình Dương: Vùng Tối</a>
+                            <p class="film__name-origin">Pacific Rim: The Black</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/mo-vuong-chi-vuong.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">40 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Mộ Vương Chi Vương</a>
+                            <p class="film__name-origin">Great King of the Grave</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/be-ha-ben-trai-sep-ben-phai.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">18 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Bệ Hạ Bên Trái, Sếp Bên Phải</a>
+                            <p class="film__name-origin">Emperor or Boss</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__carousel bg-1">
+            <div class="grid wide">
+                <div class="tab__main">
+                    <h3 class="tab__main-title">Phim Mỹ</h3>
+                    <a href="#" class="tab__main-icon fas fa-arrow-right"></a>
+                </div>
+                <div class="row gt-s" style="position: relative;">
+                    <a href="#" class="main__move-left"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class="main__move-right"><i class="fas fa-chevron-right"></i></a>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/nguoi-me-that-su.jpg);">
+                                <span class="film__resolution">HD-VietSub</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">92 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Người Mẹ Thực Sự</a>
+                                <p class="film__name-origin">The Wrong Mother</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/ngoai-gia-lam-chieu.jpg);">
+                                <span class="film__resolution">HD-VietSub</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">88 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Ngoại Già Lắm Chiêu</a>
+                                <p class="film__name-origin">Grannys Got Talent</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/ong-ban-gang-to.jpg);">
+                            <span class="film__resolution">HDRip</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">116 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Ông Bạn Găng Tơ</a>
+                            <p class="film__name-origin">Man Of Men / Peopekteu maen</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/phap-su-mu.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">120 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Pháp Sư Mù: Ai Chết Giơ Tay</a>
+                            <p class="film__name-origin">Blind Mage: Who's Died Raise Your Hand?</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/quy-ong-cua-toi.jpg);">
+                            <span class="film__resolution">HD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">120 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Quý Ông Của Tôi</a>
+                            <p class="film__name-origin">My Mister</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/sac-dep-doi-tra.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">24/24 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Sắc Đẹp Dối Trá</a>
+                            <p class="film__name-origin">Sac dep doi tra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="main__carousel bg-2">
+            <div class="grid wide">
+                <div class="tab__main">
+                    <h3 class="tab__main-title">Hoạt Hình - Anime</h3>
+                    <a href="#" class="tab__main-icon fas fa-arrow-right"></a>
+                </div>
+                <div class="row gt-s" style="position: relative;">
+                    <a href="#" class="main__move-left"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class="main__move-right"><i class="fas fa-chevron-right"></i></a>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/su-gia-dia-nguc.jpg);">
+                                <span class="film__resolution">HD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">104 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Sứ Giả Đia Ngục</a>
+                                <p class="film__name-origin">Drive Angry</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/tu-tien-truyen-chi-luyen-kiem.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">85 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Tu Tiên Truyện Chi Luyện Kiếm</a>
+                                <p class="film__name-origin">Blade of Flame</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/cuong-dao.jpg);">
+                            <span class="film__resolution">HD - VietSub</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">90 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Cuồng Đao</a>
+                            <p class="film__name-origin">Soul of BladesDoi Mat Am Duong</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/dai-chien-thai-binh-duong.jpg);">
+                            <span class="film__resolution">FullHD - Thuyết Minh</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">7/7 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Đại Chiến Thái Bình Dương: Vùng Tối</a>
+                            <p class="film__name-origin">Pacific Rim: The Black</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/mo-vuong-chi-vuong.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">40 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Mộ Vương Chi Vương</a>
+                            <p class="film__name-origin">Great King of the Grave</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/be-ha-ben-trai-sep-ben-phai.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">18 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Bệ Hạ Bên Trái, Sếp Bên Phải</a>
+                            <p class="film__name-origin">Emperor or Boss</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__carousel bg-1">
+            <div class="grid wide">
+                <div class="tab__main">
+                    <h3 class="tab__main-title">TV - Show</h3>
+                    <a href="#" class="tab__main-icon fas fa-arrow-right"></a>
+                </div>
+                <div class="row gt-s" style="position: relative;">
+                    <a href="#" class="main__move-left"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class="main__move-right"><i class="fas fa-chevron-right"></i></a>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/nguoi-me-that-su.jpg);">
+                                <span class="film__resolution">HD-VietSub</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">92 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Người Mẹ Thực Sự</a>
+                                <p class="film__name-origin">The Wrong Mother</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/ngoai-gia-lam-chieu.jpg);">
+                                <span class="film__resolution">HD-VietSub</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">88 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Ngoại Già Lắm Chiêu</a>
+                                <p class="film__name-origin">Grannys Got Talent</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/ong-ban-gang-to.jpg);">
+                            <span class="film__resolution">HDRip</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">116 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Ông Bạn Găng Tơ</a>
+                            <p class="film__name-origin">Man Of Men / Peopekteu maen</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/phap-su-mu.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">120 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Pháp Sư Mù: Ai Chết Giơ Tay</a>
+                            <p class="film__name-origin">Blind Mage: Who's Died Raise Your Hand?</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/quy-ong-cua-toi.jpg);">
+                            <span class="film__resolution">HD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">120 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Quý Ông Của Tôi</a>
+                            <p class="film__name-origin">My Mister</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 s-0">
+                        <div class="film__cover" style="background-image: url(assets/img/film/sac-dep-doi-tra.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">24/24 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Sắc Đẹp Dối Trá</a>
+                            <p class="film__name-origin">Sac dep doi tra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="newupdate bg-2">
+            <div class="grid wide">
+                <div class="tab__main">
+                    <h3 class="tab__main-title">Mới cập nhật</h3>
+                </div>
+                <div class="row gt-s">
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/su-gia-dia-nguc.jpg);">
+                                <span class="film__resolution">HD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">104 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Sứ Giả Đia Ngục</a>
+                                <p class="film__name-origin">Drive Angry</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/tu-tien-truyen-chi-luyen-kiem.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">85 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Tu Tiên Truyện Chi Luyện Kiếm</a>
+                                <p class="film__name-origin">Blade of Flame</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__cover" style="background-image: url(assets/img/film/cuong-dao.jpg);">
+                            <span class="film__resolution">HD - VietSub</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">90 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Cuồng Đao</a>
+                            <p class="film__name-origin">Soul of BladesDoi Mat Am Duong</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__cover" style="background-image: url(assets/img/film/dai-chien-thai-binh-duong.jpg);">
+                            <span class="film__resolution">FullHD - Thuyết Minh</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">7/7 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Đại Chiến Thái Bình Dương: Vùng Tối</a>
+                            <p class="film__name-origin">Pacific Rim: The Black</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__cover" style="background-image: url(assets/img/film/mo-vuong-chi-vuong.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">40 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Mộ Vương Chi Vương</a>
+                            <p class="film__name-origin">Great King of the Grave</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__cover" style="background-image: url(assets/img/film/be-ha-ben-trai-sep-ben-phai.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">18 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Bệ Hạ Bên Trái, Sếp Bên Phải</a>
+                            <p class="film__name-origin">Emperor or Boss</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/nguoi-me-that-su.jpg);">
+                                <span class="film__resolution">HD-VietSub</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">92 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Người Mẹ Thực Sự</a>
+                                <p class="film__name-origin">The Wrong Mother</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/ngoai-gia-lam-chieu.jpg);">
+                                <span class="film__resolution">HD-VietSub</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">88 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Ngoại Già Lắm Chiêu</a>
+                                <p class="film__name-origin">Grannys Got Talent</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__cover" style="background-image: url(assets/img/film/ong-ban-gang-to.jpg);">
+                            <span class="film__resolution">HDRip</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">116 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Ông Bạn Găng Tơ</a>
+                            <p class="film__name-origin">Man Of Men / Peopekteu maen</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__cover" style="background-image: url(assets/img/film/phap-su-mu.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">120 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Pháp Sư Mù: Ai Chết Giơ Tay</a>
+                            <p class="film__name-origin">Blind Mage: Who's Died Raise Your Hand?</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__cover" style="background-image: url(assets/img/film/quy-ong-cua-toi.jpg);">
+                            <span class="film__resolution">HD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">120 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Quý Ông Của Tôi</a>
+                            <p class="film__name-origin">My Mister</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__cover" style="background-image: url(assets/img/film/sac-dep-doi-tra.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">24/24 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Sắc Đẹp Dối Trá</a>
+                            <p class="film__name-origin">Sac dep doi tra</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/che-phuc.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">92 Phút</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Chế Phục</a>
+                                <p class="film__name-origin">A Chilling Cosplay</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__item">
+                            <div class="film__cover" style="background-image: url(assets/img/film/Doi-song-nguc-tu.jpg);">
+                                <span class="film__resolution">FullHD</span>
+                                <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                                <span class="film__runtime">16 Tập</span>
+                            </div>
+                            <div class="film__content">
+                                <a href="film.html" class="film__name">Đời sống ngục tù</a>
+                                <p class="film__name-origin">Prison Playbook</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__cover" style="background-image: url(assets/img/film/doi-mat-am-duong.jpg);">
+                            <span class="film__resolution">HD - VietSub</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">16/20 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Đôi mắt âm dương</a>
+                            <p class="film__name-origin">Doi Mat Am Duong</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__cover" style="background-image: url(assets/img/film/Dai-thoai-tay-du.jpg);">
+                            <span class="film__resolution">FullHD - Thuyết Minh</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">88 Phút</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Đại thoại tây du</a>
+                            <p class="film__name-origin">A Chinese Odyssey: Part One - Pandora's Box</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__cover" style="background-image: url(assets/img/film/dien-vi-em.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">24/24 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Điên Vì Em</a>
+                            <p class="film__name-origin">Professional Single</p>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 s-6">
+                        <div class="film__cover" style="background-image: url(assets/img/film/Doc-than-dua-vao-thuc-luc.jpg);">
+                            <span class="film__resolution">FullHD</span>
+                            <a href="film.html" class="film__play"><i class="fas fa-play"></i></a>
+                            <span class="film__runtime">24/24 Tập</span>
+                        </div>
+                        <div class="film__content">
+                            <a href="film.html" class="film__name">Tôi Độc Thân Dựa Vào Thực Lực</a>
+                            <p class="film__name-origin">Professional Single</p>
+                        </div>
+                    </div>
+                    <div class="col s-12 viewAll">
+                        <a href="#" class="btn btn-pink size-l">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-2 m-2 s-6">
+                    <h6 class="footer__title">GalaPhim</h6>
+                    <ul class="footer__list">
+                        <li><a href="listFilm.html">Phim mới</a></li>
+                        <li><a href="listFilm.html">Phim lẻ mới</a></li>
+                        <li><a href="listFilm.html">Phim bộ mới</a></li>
+                        <li><a href="listFilm.html">Phim chiếu rạp</a></li>
+                        <li><a href="listFilm.html">Tin tức</a></li>
+                    </ul>
+                </div>
+                <div class="col l-3 m-3 s-6">
+                    <h6 class="footer__title">Phim Hay</h6>
+                    <ul class="footer__list">
+                        <li><a href="listFilm.html">Phim hay Việt Nam</a></li>
+                        <li><a href="listFilm.html">Phim hay Trung Quốc</a></li>
+                        <li><a href="listFilm.html">Phim hay Hàn Quốc</a></li>
+                        <li><a href="listFilm.html">Phim hay Ấn Độ</a></li>
+                        <li><a href="listFilm.html">Phim hay Thái Lan</a></li>
+                    </ul>
+                </div>
+                <div class="col l-2 m-2 s-4">
+                    <h6 class="footer__title">Phim Mới</h6>
+                    <ul class="footer__list">
+                        <li><a href="listFilm.html">Phim3s</a></li>
+                        <li><a href="listFilm.html">VTV16</a></li>
+                        <li><a href="listFilm.html">YeuPhimMoi</a></li>
+                        <li><a href="listFilm.html">KhoaiTV</a></li>
+                        <li><a href="listFilm.html">HDonline</a></li>
+                        <li><a href="listFilm.html">Motphim</a></li>
+                        <li><a href="listFilm.html">Kphim</a></li>
+                        <li><a href="listFilm.html">Bongngo</a></li>
+                    </ul>
+                </div>
+                <div class="col l-2 m-2 s-4">
+                    <h6 class="footer__title">Phim Online</h6>
+                    <ul class="footer__list">
+                        <li><a href="listFilm.html">BiluTV</a></li>
+                        <li><a href="listFilm.html">Vuviphim</a></li>
+                        <li><a href="listFilm.html">Vkool</a></li>
+                        <li><a href="listFilm.html">PhimNhanh</a></li>
+                        <li><a href="listFilm.html">Phim4400</a></li>
+                        <li><a href="listFilm.html">BanhTV</a></li>
+                        <li><a href="listFilm.html">TVhay</a></li>
+                        <li><a href="listFilm.html">DongPhim</a></li>
+                    </ul>
+                </div>
+                <div class="col l-3 m-2 s-4">
+                    <h6 class="footer__title">Contact</h6>
+                    <a class="footer-link" href="listFilm.html">Góp ý: info@galaphim.net</a>
+                    <ul class="footer__social">
+                        <li class="facebook"><a href="https://www.facebook.com/phuong.giang.92317121"><i class="fab fa-facebook-square"></i></a></li>
+                        <li class="instagram"><a href="listFilm.html"><i class="fab fa-instagram"></i></a></li>
+                        <li class="twitter"><a href="https://www.youtube.com/"><i class="fab fa-twitter"></i></a></li>
+                        <li class="vk"><a href="https://www.youtube.com/"><i class="fab fa-vk"></i></a></li>
+                    </ul>
+                    <div class="footer__app">
+                        <h6 class="footer__title">Download Our App</h6>
+                        <div class="row">
+                            <a class="col l-6 m-12" href="https://play.google.com/"><img class="app-connect__img" src="./assets/img/logo/google-play.png" alt=""></a>
+                            <a class="col l-6 m-12" href="https://www.apple.com"><img class="app-connect__img" src="./assets/img/logo/appstore.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s-12">
+                    <div class="copyright">
+                        <small>© 2021 <a href="listFilm.html"><strong>Xemphimplus</strong></a>. Copyright by <a href="https://www.facebook.com/phuong.giang.92317121">Phuong Giang</a></small>
+                        <ul class="copyright__list">
+                            <li><a href="https://www.facebook.com/phuong.giang.92317121"><strong>Góp ý</strong></a></li>
+                            <li><a href="https://www.facebook.com/phuong.giang.92317121"><strong>Chính sách</strong></a></li>
+                            <li><a href="https://www.facebook.com/phuong.giang.92317121"><strong>Điều khoản</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+        const tabs = $$('.tab__item');
+        const pages = $$('.tab__page');
+        const tabActive = $('.tab__item.active')
+        const line = $('.tab__line');
+        line.style.left = tabActive.offsetLeft + 'px';
+        line.style.width = tabActive.offsetWidth + 'px';
+        tabs.forEach((tab, index) => {
+            const page = pages[index];
+            tab.onclick = function() {
+                $('.tab__item.active').classList.remove('active');
+                $('.tab__page.active').classList.remove('active');
+                this.classList.add('active');
+                page.classList.add('active');
+                line.style.left = this.offsetLeft + 'px';
+                line.style.width = this.offsetWidth + 'px';
+            }
+        });
+    </script>
+</body>
+
+</html
